@@ -1,0 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $fontCeraPro;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.28;
+  color: $TextColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
