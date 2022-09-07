@@ -1,14 +1,18 @@
 @import './common'; // Modern-normalize
 
 //* UTILS
-@import './utils/vars'; // Переменные
+@import './utils/fonts'; // Шрифти
+@import './utils/vars'; // Змінні
 @import './utils/reset'; // Reset.css
-@import './utils/basics'; // Базовые настройки стилей
+@import './utils/basics'; // Базові налаштування стилей
+@import './utils/components'; // Базові налаштування стилей
 
 //* Layout Styles
-@import './layout/main-page/main-page.scss'; // Главная страница
-@import './layout/modeling-page/modeling-page.scss'; // 3D МОДЕЛЮВАННЯ
-@import './layout/scanning-page/scanning-page.scss'; // 3D СКАНУВАННЯ
-@import './layout/printing-page/printing-page.scss'; // МИ СТВОРЮЄМО
-@import './layout/order-page/order-page.scss'; // ЗРОБИТИ ЗАМОВЛЕННЯ
-@import './layout/contacts-page/contacts-page.scss'; // КОНТАКТИ
+@import './layout/header'; // ХЕДЕР
+@import './layout/main-page.scss'; // Головна сторінка
+@import './layout/modeling-page.scss'; // 3D МОДЕЛЮВАННЯ
+@import './layout/scanning-page.scss'; // 3D СКАНУВАННЯ
+@import './layout/printing-page.scss'; // МИ СТВОРЮЄМО
+@import './layout/order-page.scss'; // ЗРОБИТИ ЗАМОВЛЕННЯ
+@import './layout/contacts-page.scss'; // КОНТАКТИ
+@import './layout/footer'; // ФУТЕР

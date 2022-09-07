@@ -1,0 +1,15 @@
+@mixin titleFonts($fs) {
+  font-weight: 700;
+  font-size: $fs;
+  line-height: 1.25;
+  color: $accentColor;
+  text-transform: uppercase;
+}
+
+.title {
+  @include titleFonts(48px);
+}
+
+.sub-title {
+  @include titleFonts(36px);
+}
