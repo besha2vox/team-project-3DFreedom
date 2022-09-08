@@ -46,7 +46,6 @@
       }
     }
   }
-
 }
 
 .more-svg {
@@ -54,6 +53,21 @@
   width: 45px;
   height: 45px;
   margin: 0 auto;
+  fill: #487996;
 }
 
 // Слайдер в модальном окне
+
+.slider-modal {
+  &__img {
+    @media screen and(min-width:320px) {
+      width: 80%;
+    }
+    @media screen and(min-width:1200px) {
+      width: 70%;
+    }
+    @media screen and(min-width:1440px) {
+        width: 50%;
+      }
+  }
+}
