@@ -7,9 +7,21 @@
 }
 
 .title {
-  @include titleFonts(48px);
+  @include titleFonts(24px);
+  @media screen and (min-width: $tablet) {
+    font-size: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 48px;
+  }
 }
 
 .sub-title {
-  @include titleFonts(36px);
+  @include titleFonts(18px);
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
 }
