@@ -23,7 +23,7 @@
         width: 71.4px;
         height: 63.8px;
         background: $spotBackgroundColor;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        box-shadow: $spotShadow;
         border-radius: 0px 35px 0px 0px;
 transform: rotate(180deg);
     }
@@ -32,7 +32,7 @@ transform: rotate(180deg);
         width: 144px;
         height: 136.8px;
         background: $spotBackgroundColor;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        box-shadow: $spotShadow;
         border-radius: 0px 0px 72px 0px;
         transform: rotate(90deg);
     }
@@ -51,7 +51,7 @@ transform: rotate(180deg);
         top: 55%;
         left: -48px;
         background: $spotBackgroundColor;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        box-shadow: $spotShadow;
         border-radius: 0px 0px 35px 0px;
     }
 }
@@ -63,7 +63,7 @@ transform: rotate(180deg);
         left: 0;
         z-index: -1;
         background: $spotBackgroundColor;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        box-shadow: $spotShadow;
         border-radius: 0px 0px 0px 35px;
 transform: rotate(-90deg);
         bottom: 45px;
@@ -79,7 +79,7 @@ transform: rotate(-90deg);
         position: absolute;
         left: 0;
         background: $spotBackgroundColor;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        box-shadow: $spotShadow;
         border-radius: 0px 0px 72px 0px;
     }
     }
