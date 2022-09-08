@@ -1,50 +1,67 @@
 .container__more-photo {
-
-    @media screen and (min-width: 1440px) {
-        padding: 0 149px;
-    }
-    
+  @media screen and(max-width:767px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 0 149px;
+  }
 }
 
 .more-photo-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-    margin-bottom: 16px;
-    margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  width: 100%;
+
+  @media screen and(min-width:768px) {
+    width: 704px;
+    gap: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  @media screen and(min-width:1200px) {
     width: 100%;
+    margin-top: 60px;
+    margin-bottom: 16px;
+  }
+  @media screen and(min-width:1440px) {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 16px;
+  }
 
-    @media screen and(min-width:768px) {
-        width: 704px;
-        gap: 32px;
-        margin-top: 32px;
-        margin-bottom: 32px;
+  &__item {
+    @media screen and(max-width:767px) {
+      width: 100%;
     }
-    @media screen and(min-width:1200px) {
-        width: 100%;
-        margin-top: 60px;
-        margin-bottom: 16px;
-     }
 
-    &__item:nth-child(n+4) {
-        display: none;
+    &:nth-child(n + 4) {
+      display: none;
 
-        @media screen and(min-width:768px) {
-            display: block;
-        }
-    
+      @media screen and(min-width:768px) {
+        display: block;
+      }
     }
+  }
+
+//   &__img {
+//     @media screen and(max-width:767px) {
+//       width: 100%;
+//     }
+//     @media screen and(min-width:768px) {
+//       width: auto;
+//     }
+//   }
 }
 
 .more-svg {
-    display: block;
-    width: 45px;
-    height: 45px;
-    margin: 0 auto;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
 }
 
-
-
 // Слайдер в модальном окне
-
