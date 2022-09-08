@@ -2,6 +2,7 @@
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
+  outline: 1px solid darkgreen;
   @media screen and (max-width: 767px) {
     max-width: $mobile;
   }
