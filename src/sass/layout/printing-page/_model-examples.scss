@@ -1,0 +1,18 @@
+.model-list__item{
+list-style: none;
+width: calc((100% - 20px)/2);
+opacity: 0.8;
+box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+border-radius: 50px 0px;
+background: #FFFFFF;
+}
+
+.title--changes {
+    margin-bottom: 20px;
+}
+
+.model-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
