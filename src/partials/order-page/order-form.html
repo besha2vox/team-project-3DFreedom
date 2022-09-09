@@ -1,0 +1,72 @@
+<section class="container">
+  <h2 class="sub-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+  <form class="form">
+    <label for="name" class="form__label">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Ім’я"
+        class="form__input"
+      />
+    </label>
+    <label for="mail" class="form__label">
+      <input
+        type="text"
+        name="mail"
+        id="mail"
+        placeholder="Email"
+        class="form__input"
+      />
+    </label>
+    <label for="type" class="form__label">
+      <input
+        type="text"
+        name="type"
+        id="type"
+        placeholder="Види пластика"
+        class="form__input"
+      />
+    </label>
+    <label for="quality" class="form__label">
+      <input
+        type="text"
+        name="quality"
+        id="quality"
+        placeholder="Якість друку"
+        class="form__input"
+      />
+    </label>
+    <label for="color" class="form__label">
+      <input
+        type="text"
+        name="color"
+        id="color"
+        placeholder="Колір"
+        class="form__input"
+      />
+    </label>
+    <div class="thumb__textarea">
+      <label for="comment" class="form__label"
+        >Повідомлення
+        <textarea
+          placeholder="Залишіть своє повідомлення"
+          class="form__textarea"
+          name="comment"
+          id="comment"
+        ></textarea>
+      </label>
+      <label for="file" class="form__label--file">
+        <input class="input__file" type="file" name="file" id="file" />
+        <svg width="21.38" height="20">
+          <use href="/src/images/svg/sprite.svg#icon-input-file"></use>
+        </svg>
+      </label>
+    </div>
+
+    <p class="form__text--file">
+      *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+    </p>
+    <button class="form__btn" type="submit">ВІДПРАВИТИ</button>
+  </form>
+</section>

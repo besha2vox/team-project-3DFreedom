@@ -1,0 +1,57 @@
+.form {
+  margin-top: 28px;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 1px solid $accentColor;
+  min-width: 280px;
+  margin-bottom: 44px;
+  background-color: inherit;
+}
+
+.form__textarea {
+  min-width: 280px;
+  min-height: 199px;
+  margin-top: 4px;
+  resize: none;
+  border: none;
+  border: 1px solid $accentColor;
+  border-radius: 50px 0px;
+  padding: 22px 0 0 20px;
+}
+
+textarea::placeholder {
+  color: $textareaColor;
+}
+
+.form__text--file {
+  color: $textareaColor;
+  margin-bottom: 40px;
+}
+
+.input__file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.thumb__textarea {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.form__label--file {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  bottom: 23px;
+  right: 23.31px;
+}
+
+.form__btn {
+  width: 280px;
+}
