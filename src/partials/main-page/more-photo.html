@@ -946,7 +946,7 @@
 
               <div class="mySlides fade">
               <img
-                class="slider-modal__img"
+                class="slider-modal__img-big"
                 srcset="
                   /src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-9@2x.jpg   320w,
                   /src/images/bitmap/main/tablet/gallery/more-photos-mozjpeg/more-photos-9@2x.jpg   768w,
@@ -959,7 +959,7 @@
 
               <div class="mySlides fade">
               <img
-                class="slider-modal__img"
+                class="slider-modal__img-big"
                 srcset="
                   /src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-10@2x.jpg   320w,
                   /src/images/bitmap/main/tablet/gallery/more-photos-mozjpeg/more-photos-10@2x.jpg   768w,
@@ -972,7 +972,7 @@
 
               <div class="mySlides fade">
                       <img
-                class="slider-modal__img-big"
+                class="slider-modal__img"
                 srcset="
                   /src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-11@2x.jpg   320w,
                   /src/images/bitmap/main/tablet/gallery/more-photos-mozjpeg/more-photos-11@2x.jpg   768w,
@@ -1022,6 +1022,8 @@ let btn9 = document.getElementById("myBtn8");
 let btn10 = document.getElementById("myBtn9");
 let btn11 = document.getElementById("myBtn11");
 let btn12 = document.getElementById("myBtn12");
+let btn13 = document.getElementById("myBtn10");
+
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 
@@ -1062,6 +1064,9 @@ btn11.onclick = function() {
 btn12.onclick = function() {
     modal.style.display = "block";
 }
+btn13.onclick = function() {
+    modal.style.display = "block";
+}
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -1074,6 +1079,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
 </script>
 <script>
 let slideIndex = 1;
