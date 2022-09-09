@@ -1,6 +1,14 @@
 .order-page {
-  padding-top: 40px;
+  padding-top: 18px;
   padding-bottom: 40px;
+
+  position: relative;
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0 0 100px;
+  }
 }
 
 .order-page__hero {
@@ -10,6 +18,9 @@
 
   @media screen and (min-width: $tablet) {
     align-items: flex-start;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 45px 0 0 149px;
   }
 }
 
@@ -30,7 +41,8 @@
 
 .order-page__title {
   margin-bottom: 16px;
-  font-size: 22px;
+  font-size: 23px;
+
   @media screen and (min-width: $tablet) {
     font-size: 36px;
   }
@@ -55,9 +67,9 @@
     max-width: 672px;
     margin-bottom: 24px;
   }
-  &::last-child {
-    margin-right: 0;
-  }
+}
+.order-page__dscr:last-child {
+  margin-bottom: 0;
 }
 
 .imgs__list {
@@ -77,17 +89,36 @@
   background-repeat: no-repeat;
 }
 
-.item1 {
+.item-car {
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-1.jpg);
   border-top-right-radius: 72px;
   border-bottom-right-radius: 72px;
 }
-.item2 {
+.item-colum {
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-2.jpg);
   border-top-left-radius: 72px;
   border-bottom-right-radius: 72px;
 }
-.item3 {
+.item-mushroom {
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-3.jpg);
   border-bottom-right-radius: 72px;
+}
+
+.decoration {
+  position: absolute;
+  height: 82px;
+  width: 82px;
+  background-color: $spotBackgroundColor;
+  box-shadow: $spotShadow;
+  border-radius: 0px 0px 72px 0px;
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+}
+.decoration--right {
+  right: 32px;
+  top: 7px;
+}
+.decoration--left {
+  left: 35px;
 }
