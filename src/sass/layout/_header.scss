@@ -1,0 +1,287 @@
+.page-header {
+    position: relative;
+}
+
+.mobile-container {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo__link {
+    padding: 23px 0;
+    z-index: 99;
+}
+
+.mobile-menu {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mobile-menu__toggle {
+    padding: 23px 0;
+}
+
+.mobile-menu__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.mobile-menu__icon-menu  {
+    width: 32px;
+    height: 18px;
+}
+
+.mobile-menu__icon-cross {
+    width: 18px;
+    height: 18px;
+}
+
+
+.mobile-menu__toggle .mobile-menu__icon-cross {
+    display: none;
+}
+
+.mobile-menu__toggle.is-open .mobile-menu__icon-menu {
+    display: none;
+}
+
+.mobile-menu__toggle.is-open .mobile-menu__icon-cross {
+    display: block;
+}
+
+
+.mobile-menu__container {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 2%;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 500ms $cubicBezier, background-color 250ms $cubicBezier;
+}
+
+.mobile-menu__container.is-open {
+    display: block;
+    z-index: 99;
+    opacity: 1;
+    transform: scale(1);
+}
+.mobile-menu__item {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.mobile-menu__item--link {
+    width: 100%;
+    font-family: $fontCeraPro;
+    @include titleFonts(24px);
+}
+
+.mobile-menu__service-list {
+    margin-top: 24px;
+}
+
+.mobile-menu__service-item-link {
+    width: 100%;
+    font-family: $fontCeraPro;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.25;
+    text-transform: none;
+    color: $accentColor;
+}
+
+.mobile-menu__service-item {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.mobile-menu__item--link:hover,
+.mobile-menu__item--link:focus {
+    color: $accentColor;
+    -webkit-text-stroke: 1px $accentColor;
+    -webkit-text-fill-color: $spotBackgroundColor;
+}
+
+// width: 7px;
+// height: 7px;
+// left: 95px;
+// top: 339px;
+
+// background: #487996;
+// border-radius: 3px 0px;
+
+// Контакти
+
+.mobile-contacts__button {
+    padding: 23px 0;
+}
+
+.mobile-contacts__dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 27px;
+}
+
+.mobile-contacts__content {
+    display: none;
+    position: absolute;
+    left: -70px;
+    top: 55px;
+    background-color: $spotBackgroundColor;
+    width: 162px; 
+    height: 82px;
+    padding: 16px 6px 16px 8px;
+    z-index: 99;
+    border-radius: 2px;
+}
+
+.mobile-contacts--background-triangle {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: -35%;
+    border-radius: 4px;
+    border-left: 18px solid #0000;
+    border-right: 18px solid #0000;
+    border-bottom: 24px solid $spotBackgroundColor;
+    z-index: 99;
+}
+
+// .mobile-contacts__item:not(:last-child) {
+//     margin-bottom: 10px;
+// }
+
+.mobile-contacts__link {
+    color: $TextColor;
+    padding: 2px;
+    text-decoration: none;
+    display: block;
+    font-family: $fontCeraPro;
+    line-height: 1.26;
+    letter-spacing: 1%;
+}
+
+.mobile-contacts__link:hover,
+.mobile-contacts__link:focus {
+    color: $accentColor;
+}
+
+.mobile-contacts__dropdown:hover .mobile-contacts__content,
+.mobile-contacts__dropdown:focus .mobile-contacts__content {
+    display: block;
+}
+
+.mobile-contacts__dropdown:hover .mobile-contacts--background-triangle,
+.mobile-contacts__dropdown:focus .mobile-contacts--background-triangle {
+    display: block;
+}
+
+.menu-lang__dropdowncontent {
+    padding: 23px 0;
+    cursor: pointer;
+}
+
+.menu-lang__button {
+    color: $langColor;
+    padding: 2px;
+    text-decoration: none;
+    font-family: $fontCaviarDreams;
+    font-weight: 700px;
+    font-size: 16px;
+    line-height: 1.27;
+    letter-spacing: 1%;
+    cursor: pointer;
+}
+
+.menu-lang__dropdowncontent {
+    position: relative;
+    display: inline-block;
+    z-index: 99;
+}
+
+.menu-lang__content {
+    display: none;
+    position: absolute;
+    background-color: $spotBackgroundColor;
+    width: 35px;
+}
+
+.menu-lang__link {
+    color: $langColor;
+    padding: 2px;
+    text-decoration: none;
+    display: block;
+    font-family: $fontCaviarDreams;
+    font-weight: 700px;
+    font-size: 16px;
+    line-height: 1.27;
+    letter-spacing: 1%;
+}
+
+.menu-lang__link:hover,
+.menu-lang__link:focus {
+    color: $accentColor;
+}
+
+.menu-lang__dropdowncontent:hover .menu-lang__content,
+.menu-lang__dropdowncontent:focus .menu-lang__content {
+    display: block;
+}
+
+.page-header__rectangle--logo {
+    display: block;
+    position: absolute;
+    width: 73.65px;
+    height: 73.65px;
+    top: 0;
+    left: 0;
+    background-color: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 35px 0px 0px 35px;
+    transform: rotate(180deg);
+    z-index: 9;
+}
+
+.page-header__rectangle--lang {
+    display: block;
+    position: absolute;
+    width: 73.65px;
+    height: 73.65px;
+    top: 0;
+    left: 83%;
+    background-color: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 35px 0px 0px 35px;
+    z-index: 9;
+}
+
+.page-header__rectangle--mobile-menu {
+    display: block;
+    position: absolute;
+    width: 73.65px;
+    height: 73.65px;
+    top: 295px;
+    left: 0;
+    background-color: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 0px 0px 35px 0px;
+    z-index: 9;
+}

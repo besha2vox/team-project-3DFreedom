@@ -1,59 +1,73 @@
-<header class="page-header">
-    <div class="mobile-container">
-        <a href="" class="logo">
-            <svg class="logo__svg" width="101" height="25">
-                <use class="logo__icon" href="/src/images/bitmap/logo/browser-png/logo_101x25.png"></use>
-            </svg>
-        </a>
-        <div class="mobile-menu">
-            <button type="button" class="toggle-mobile-menu" aria-controls="mobile-menu" aria-expanded="false">
-                <svg class="mobile-menu__icons" aria-label="Переключатель мобільного меню" width="18" height="18">
-                    <use class="mobile-menu__icon-menu" href="/src/images/svg/sprite.svg#icon-mobile-menu"></use>
-                    <use class="mobile-menu__icon-cross" href="/src/images/svg/sprite.svg#icon-cross"></use>
-                </svg>
-            </button>
-            <div class="mobile-menu__container" id="mobile-menu">
-                <nav class="mobile-menu__nav">
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item"><a href="./main-page/">Головна</a></li>
-                        <li class="mobile-menu__item"><a href="">Послуги</a>
-                            <ul class="mobile-menu__service-list">
-                                <li class="mobile-menu__service-item"><a href="">3D Моделювання</a></li>
-                                <li class="mobile-menu__service-item"><a href="">3D Сканування</a></li>
-                                <li class="mobile-menu__service-item"><a href="">3D Друк</a></li>
-                        </li>
-                        <li class="mobile-menu__item"><a href="">Замовити</a></li>
-                        <li class="mobile-menu__item"><a href="">Контакти</a></li>
-                    </ul>
-                </nav>
+<body>
+    <header class="page-header">
+        <div class="mobile-container container">
+            <a class="logo__link link" href="" class="logo">
+                <picture class="logo">
+                    <source srcset="/src/images/bitmap/logo/browser-png/logo_101x25.png 101w, /src/images/bitmap/logo/browser-png/logo_101x25@2x.png 202w"
+                        media="(max-width: 767px)" sizes="(min-width: 101px) 101px, 20vw">
+                    <source srcset="/src/images/bitmap/logo/browser-png/logo_192x48.png 270w, /src/images/bitmap/logo/browser-png/logo_192x48.@2x.png 384w" 
+                        media="(min-width: 1440px)" sizes="(min-width: 192px) 192px, 20vw">
+                    <source srcset="/src/images/bitmap/logo/browser-png/logo_125x31.png 125w, /src/images/bitmap/logo/browser-png/logo_125x31@2x.png 250w"
+                        media="(min-width: 768px)" sizes="(min-width: 125px) 125px, 20vw">
+                    <img src="/src/images/bitmap/logo/browser-png/logo_192x48.png" alt="Логотип компанії">
+                </picture>
+            </a>
+            <div class="mobile-menu">
+                <button type="button" class="mobile-menu__toggle toggle-menu js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg class="mobile-menu__icons" aria-label="Переключатель мобільного меню" width="32" height="18">
+                        <use class="mobile-menu__icon-menu" href="/src/images/svg/sprite.svg#icon-mobile-menu"></use>
+                        <use class="mobile-menu__icon-cross" href="/src/images/svg/sprite.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+                    <nav class="mobile-menu__nav">
+                        <ul class="mobile-menu__list list">
+                            <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="./main-page/">Головна</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="">Послуги</a>
+                                <ul class="mobile-menu__service-list list">
+                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" href="">3D Моделювання</a></li>
+                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" ="">3D Сканування</a></li>
+                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" href="">3D Друк</a></li>
+                            </li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="">Замовити</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="dropdown">
+                <div class="mobile-contacts__dropdown">
+                    <div class="mobile-contacts__button">
+                        <svg class="contacts-menu__icons" aria-label="Меню контактів" width="18" height="18">
+                            <use class="contacts-menu__icon-menu" href="/src/images/svg/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    <div class="mobile-contacts--background-triangle"></div>
+                    <div class="mobile-contacts__content">
+                        <ul class="mobile-contacts__list list">
+                            <li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="tel:+380936432288"
+                                    class="mobile-contacts__link">+38 (093) 643 22 88</a>
+                            </li>
+                            <li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="tel:+380503454423"
+                                    class="mobile-contacts__link">+38 (050) 345 44 23</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-lang__dropdowncontent">
+                    <div class="menu-lang__button">ENG</div>
+                    <div class="menu-lang__content">
+                        <ul class="menu-lang__list list">
+                            <li class="menu-lang__item"><a class="menu-lang__link link" href="">UKR</a></li>
+                            <li class="menu-lang__item"><a class="menu-lang__link link" href="">POL</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="mobile-contacts__dropdown">
-            <div class="mobile-contacts__button">
-                <svg class="contacts-menu__icons" aria-label="Меню контактів" width="18" height="18">
-                    <use class="contacts-menu__icon-menu" href="/src/images/svg/sprite.svg#icon-phone"></use>
-                </svg>
-            </div>
-            <div class="mobile-contacts__content">
-                <ul class="mobile-contacts__list">
-                    <li class="mobile-contacts__item"><a href="tel:0961111111" class="mobile-contacts__link">+38 (093) 643 22 88</a>
-                    </li>
-                    <li class="mobile-contacts__item"><a href="tel:0961111111" class="mobile-contacts__link">+38 (050) 345 44 23</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="menu-lang__dropdowncontent">
-            <div class="menu-lang__button">ENG</div>
-            <div class="menu-lang__content">
-                <ul class="mobile-contacts__list">
-                    <li class="mobile-contacts__item"><a href="">UKR</a></li>
-                    <li class="mobile-contacts__item"><a href="">POL</a></li>
-                    <li class="mobile-contacts__item"><a href="">ENG</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="page-header__rectangle--logo"></div>
-    <div class="page-header__rectangle--lang"></div>
-</header>
+        <div class="page-header__rectangle--logo"></div>
+        <div class="page-header__rectangle--lang"></div>
+        <div class="page-header__rectangle--mobile-menu"></div>
+    </header>
+    <script src="/src/js/mobile-menu.js"></script>
+</body>
