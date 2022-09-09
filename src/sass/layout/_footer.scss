@@ -31,6 +31,9 @@
         margin-bottom: 20px;
     }
 
+         @media screen and (min-width: $desktop) {
+            margin-right: 277px;
+         }
 }
 
 .footer__logo-img {
@@ -41,23 +44,18 @@
     @media screen and (min-width: $desktop) {
         width: 192px;
         height: 48px;
-        margin-right: 277px;
+        
     }
-
-
 }
 
 .footer__info {
     @media screen and (min-width: $tablet) {
         display: flex;
-        justify-content: space-between;
+        
     }
 
     @media screen and (min-width: $desktop) {
         font-size: 16px;
-        width: 100%;
-        margin-right: 79px;
-        justify-content: space-evenly;
     }
 
 }
@@ -65,6 +63,15 @@
 .footer__menu {
     @media screen and (max-width: 767px) {
         margin-top: 19px;
+       
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 52px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 103px;
     }
 
 }
@@ -73,7 +80,7 @@
     color: $TextColor;
 
     @media screen and (min-width: $desktop) {
-        transition: color $cubicBezier;
+        transition: color 250ms $cubicBezier;
 
         &:hover,
         &:focus {
@@ -89,10 +96,15 @@
 .footer__socials {
     @media screen and (max-width: 767px) {
         margin-top: 24px;
+        
     }
 
     @media screen and (min-width: $tablet) and (max-width: 1439px) {
-        margin-right: 199px;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 161px;
     }
 }
 
@@ -104,7 +116,7 @@
     color: $TextColor;
 
     @media screen and (min-width: $desktop) {
-        transition: color $cubicBezier;
+        transition: color 250ms $cubicBezier;
 
         &:hover,
         &:focus {
