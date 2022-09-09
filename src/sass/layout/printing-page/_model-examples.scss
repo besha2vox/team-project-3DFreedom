@@ -1,11 +1,12 @@
-.model-list__item{
+.model-list__item{ 
 list-style: none;
-width: calc((100% - 20px)/2);
-opacity: 0.8;
-box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
-border-radius: 50px 0px;
-background: #FFFFFF;
+// width:calc((100% - 20px)/2);
+text-align: center;
+
 }
+ img{
+    width:auto;
+ }
 
 .title--changes {
     margin-bottom: 20px;
@@ -15,4 +16,17 @@ background: #FFFFFF;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    gap:20px;
+}
+
+.dd{
+    width:130px;
+    height:158px;
+    background: #FFFFFF;
+        opacity: 0.8;
+        box-shadow: inset 1px 1px 16px #CBCBCB, inset -1px -1px 16px #FFFFFF;
+        border-radius: 50px 0px;
+        box-shadow: -1px -1px 16px 0px rgba(255, 255, 255, 1) inset;
+        
+            box-shadow: 1px 1px 16px 0px rgba(203, 203, 203, 0.8) inset;
 }
