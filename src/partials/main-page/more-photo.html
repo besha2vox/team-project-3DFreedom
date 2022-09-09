@@ -838,7 +838,7 @@
     <!-- Слайдер в модальном окне -->
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>         
+        <span class="close"></span>         
     <div class="slideshow-container">
       <div class="mySlides fade">
               <img
@@ -1007,23 +1007,23 @@
 
 <script>
   // Get the modal
-var modal = document.getElementById('myModal');
+let modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn1");
-var btn2 = document.getElementById("myBtn2");
-var btn3 = document.getElementById("myBtn3");
-var btn4 = document.getElementById("myBtn4");
-var btn5 = document.getElementById("myBtn4");
-var btn6 = document.getElementById("myBtn5");
-var btn7 = document.getElementById("myBtn6");
-var btn8 = document.getElementById("myBtn7");
-var btn9 = document.getElementById("myBtn8");
-var btn10 = document.getElementById("myBtn9");
-var btn11 = document.getElementById("myBtn11");
-var btn12 = document.getElementById("myBtn12");
+let btn = document.getElementById("myBtn1");
+let btn2 = document.getElementById("myBtn2");
+let btn3 = document.getElementById("myBtn3");
+let btn4 = document.getElementById("myBtn4");
+let btn5 = document.getElementById("myBtn4");
+let btn6 = document.getElementById("myBtn5");
+let btn7 = document.getElementById("myBtn6");
+let btn8 = document.getElementById("myBtn7");
+let btn9 = document.getElementById("myBtn8");
+let btn10 = document.getElementById("myBtn9");
+let btn11 = document.getElementById("myBtn11");
+let btn12 = document.getElementById("myBtn12");
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -1076,7 +1076,7 @@ window.onclick = function(event) {
 }
 </script>
 <script>
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -1090,9 +1090,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
