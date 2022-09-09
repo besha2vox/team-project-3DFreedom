@@ -1,32 +1,73 @@
-.model-list__item{ 
-list-style: none;
-// width:calc((100% - 20px)/2);
-text-align: center;
+.model{
+    @media screen and (min-width: $tablet) {
+  padding-top: 29.95px;
+  position: relative;}}
 
+  .decor {
+    display: none;
+    @media screen and (min-width: $tablet) {
+        display: block;
+      position: absolute;
+      width: 71.41px;
+      height: 63.79px;
+      right: 32px;
+      top: 8.42px;
+      background-color: #FFFFFF;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 35px;}
+  }
+        
+  .title--changes{
+    @media screen and (min-width: $tablet) {
+           font-size: 36px;}
+    @media screen and (min-width: $desktop) {
+            margin-left: 117px;
+            font-size: 48px;
+        }
+  }
+
+.model-list__item{ 
+width:calc((100% - 20px)/2);
+    height: 158px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    display: flex;
+   background: #FFFFFF;
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+    border-radius: 50px 0px;
+    @media screen and (min-width: $tablet){
+    width:calc((100% - 32px)/4);
+        height: 182px;
+    }
+@media screen and (min-width: $desktop) {
+    height: 382px;
 }
- img{
+}
+ .model-list__item .img{
     width:auto;
  }
 
-.title--changes {
-    margin-bottom: 20px;
-}
+.model-list__text {
+    text-align: center;
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+       color: #487996;
+       
+        }
+
 
 .model-list{
-    width: 100%;
+    margin-top: 16px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap:20px;
+@media screen and (min-width: $tablet){
+    flex-wrap: nowrap;
+        gap: 32px;
+        }
 }
 
-.dd{
-    width:130px;
-    height:158px;
-    background: #FFFFFF;
-        opacity: 0.8;
-        box-shadow: inset 1px 1px 16px #CBCBCB, inset -1px -1px 16px #FFFFFF;
-        border-radius: 50px 0px;
-        box-shadow: -1px -1px 16px 0px rgba(255, 255, 255, 1) inset;
-        
-            box-shadow: 1px 1px 16px 0px rgba(203, 203, 203, 0.8) inset;
-}
