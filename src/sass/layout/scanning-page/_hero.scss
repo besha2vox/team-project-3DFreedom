@@ -1,11 +1,21 @@
+.scanning {
+  justify-content: center;
+}
+
 .scan-container {
   display: flex;
   background-color: $spotBackgroundColor;
   position: relative;
   flex-direction: column;
-  align-items: flex-start;
+
   @media screen and (min-width: 768px) {
     align-items: normal;
+    max-width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+    padding-right: 269px;
+    padding-left: 149px;
   }
 }
 
@@ -23,8 +33,8 @@
     position: relative;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 149px;
-    gap: 24px;
+    // margin-left: 149px;
+    // gap: 24px;
   }
 }
 
@@ -33,7 +43,7 @@
   margin-bottom: 16px;
   margin-left: 0;
   @media screen and (min-width: $desktop) {
-    margin-left: 149px;
+    // margin-left: 149px;
   }
 }
 
@@ -48,6 +58,7 @@
     position: absolute;
     transform: translateX(108%);
     text-align: left;
+    margin-left: 72px;
   }
 }
 
@@ -79,8 +90,8 @@
     width: 237px;
     height: 165px;
     margin-top: 0;
-    margin-right: 6px;
-    right: 0;
+    // margin-right: 6px;
+    right: 6px;
     top: 50%;
     background-image: url(../images/bitmap/3d-scanning/tablet/scanning.jpg);
     background-size: 237px 165px;
@@ -93,7 +104,7 @@
   @media screen and (min-width: $desktop) {
     width: 435px;
     height: 268px;
-    margin-right: 269px;
+    right: 269px;
     background-image: url(../images/bitmap/3d-scanning/desktop/scanning.jpg);
     background-size: 435px 268px;
     @media (min-device-pixel-ratio: 2),
@@ -107,13 +118,13 @@
 .decor1 {
   display: none;
   position: absolute;
-  margin-right: 32px;
+  //   right: 32px;
   width: 71px;
   height: 74px;
   background-color: $spotBackgroundColor;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 25px 0px;
-  right: 0;
+  right: 32px;
   top: 100%;
   @media screen and (min-width: $tablet) {
     display: block;
@@ -126,10 +137,10 @@
 .decor2 {
   display: none;
   position: absolute;
-  margin-right: 32px;
+
   width: 71px;
   height: 63px;
-  right: 0;
+  right: 32px;
   top: 0;
   background-color: $spotBackgroundColor;
   box-shadow: -17px -20px 80px rgba(0, 0, 0, 0.1);
@@ -145,6 +156,7 @@
 }
 
 .decor3 {
+  display: none;
   position: absolute;
   width: 82px;
   height: 78px;
@@ -152,4 +164,7 @@
   top: 60px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 72px 0px;
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
