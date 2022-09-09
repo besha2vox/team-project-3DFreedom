@@ -1,0 +1,151 @@
+.model__sec-container {
+    position: relative;
+    @media screen and (max-width: 767px) {
+        padding-top: 18.35px;
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 30px;
+        padding-bottom: 41px;
+    }
+    @media screen and (min-width: 1440px) {
+        padding-top: 45.7px;
+        padding-bottom: 40px;
+    }
+}
+.model__f-container {
+    position: relative;
+}
+.model__r-rectangle {
+    position: absolute;
+    @media screen and (min-width: 768px) {
+        right: 0;
+        width: 71.4px;
+        height: 63.8px;
+        background: $spotBackgroundColor;
+        box-shadow: $spotShadow;
+        border-radius: 0px 35px 0px 0px;
+transform: rotate(180deg);
+    }
+    @media screen and (min-width: 1440px) {
+        right: 0;
+        width: 144px;
+        height: 136.8px;
+        background: $spotBackgroundColor;
+        box-shadow: $spotShadow;
+        border-radius: 0px 0px 72px 0px;
+        transform: rotate(90deg);
+    }
+}
+.model__hero {
+    @media screen and (min-width: 1440px) {
+        padding-left: 117px;
+    }
+}
+.model__rectangle-mob {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        width: 73.65px;
+        height: 73.65px;
+        z-index: -1;
+        top: 55%;
+        left: -48px;
+        background: $spotBackgroundColor;
+        box-shadow: $spotShadow;
+        border-radius: 0px 0px 35px 0px;
+    }
+}
+.model__rectangle-tab {
+    @media screen and (min-width: 768px) {
+        width: 74px;
+        height: 71.4px;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        background: $spotBackgroundColor;
+        box-shadow: $spotShadow;
+        border-radius: 0px 0px 0px 35px;
+transform: rotate(-90deg);
+        bottom: 45px;
+    }
+    @media screen and (min-width: 1440px) {
+        display: none;
+    }
+}
+.model__rectangle {
+    @media screen and (min-width: 1440px) {
+        width: 82px;
+        height: 72px;
+        position: absolute;
+        left: 0;
+        background: $spotBackgroundColor;
+        box-shadow: $spotShadow;
+        border-radius: 0px 0px 72px 0px;
+    }
+    }
+
+.model__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    font-style: normal;
+
+    @media screen and (min-width: 350px) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: 380px) {
+        font-size: 28px;
+    }
+
+    @media screen and (min-width: 480px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+.title {}
+
+.model__text-list {
+    margin-top: 16px;
+
+    @media screen and (min-width: 1440px) {
+        display: flex;
+    }
+}
+
+.model__item {
+    @media screen and (min-width: 768px) {
+        width: 515px;
+    }
+}
+
+.model__item:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 72px;
+    }
+}
+
+.model__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: $TextColor;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
