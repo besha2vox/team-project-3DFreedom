@@ -1,12 +1,25 @@
 .create-model-container {
-  max-width: 320px;
+  width: 320px;
+  padding: 0 20px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding: 0 32px;
+  }
 }
 
 .create-model-title {
-  text-align: left;
   margin-bottom: 16px;
   @media screen and (min-width: $tablet) {
+    max-width: 648px;
     margin-bottom: 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 842px;
+    margin-bottom: 40px;
   }
 }
 
@@ -15,19 +28,37 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px 20px;
+  margin-bottom: 40px;
   @media screen and (min-width: $tablet) {
     flex-wrap: nowrap;
-    column-gap: 32px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 80px;
   }
 }
 
 .create-model-list__item {
-  display: flex;
-  justify-content: center;
-  @media screen and (max-width: $tablet) {
-    width: calc(50% - 30px);
+  @media screen and (max-width: $mobile) {
+    min-width: 130px;
   }
   @media screen and (min-width: $tablet) {
-    flex-wrap: nowrap;
+    min-width: 152px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+  }
+}
+
+.create-model-list__card {
+  border-radius: 0px 0px 0px 50px;
+}
+
+.create-model__btn {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 80px;
   }
 }
