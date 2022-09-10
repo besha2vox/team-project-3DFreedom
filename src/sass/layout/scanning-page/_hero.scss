@@ -68,6 +68,7 @@
 
 .scan__content--font {
   font-weight: 300;
+
   @media screen and (min-width: $desktop) {
     font-size: 18px;
   }
@@ -170,5 +171,22 @@
   border-radius: 0px 0px 72px 0px;
   @media screen and (min-width: $desktop) {
     display: block;
+  }
+}
+
+.decor4 {
+  display: none;
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 72px;
+  right: -10px;
+  top: 360px;
+  @media screen and (min-width: $mobile) {
+    display: block;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
