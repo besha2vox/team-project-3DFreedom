@@ -140,12 +140,12 @@
       fill: $accentColor;
     }
     @media screen and(min-width: $tablet) {
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
     }
     @media screen and (min-width: $desktop) {
-      width: 30px;
-      height: 30px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -396,7 +396,7 @@
 
 .more-block5 {
   position: absolute;
-  top: 270px;
+  bottom: 500px;
   right: -20px;
   display: block;
   width: 74px;
@@ -438,7 +438,7 @@
     width: 144px;
     height: 116px;
     border-radius: 0px 0px 0px 72px;
-    bottom: 45px;
+    bottom: -55px;
     right: 175px;
   }
 }
