@@ -1,0 +1,170 @@
+.scanning {
+  justify-content: center;
+}
+
+.scan-container {
+  display: flex;
+  background-color: $spotBackgroundColor;
+  position: relative;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    align-items: normal;
+    max-width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+    padding-right: 269px;
+    padding-left: 149px;
+  }
+}
+
+.scan {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: $mobile) {
+    max-width: $mobile;
+  }
+
+  @media screen and (min-width: 767px) {
+    max-width: 514px;
+    position: relative;
+  }
+  @media screen and (min-width: $desktop) {
+    // margin-left: 149px;
+    // gap: 24px;
+  }
+}
+
+.scan__title {
+  padding-top: 40px;
+  margin-bottom: 16px;
+  margin-left: 0;
+  @media screen and (min-width: $desktop) {
+    // margin-left: 149px;
+  }
+}
+
+.scan__text {
+  @media screen and (min-width: $desktop) {
+    width: 490px;
+  }
+}
+
+.scan__text--position {
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    transform: translateX(108%);
+    text-align: left;
+    margin-left: 72px;
+  }
+}
+
+.scan__content--font {
+  font-weight: 300;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
+
+.back-pict {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 199px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-image: url(../images/bitmap/3d-scanning/mobile/scanning.jpg);
+  background-size: 280px 199px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/bitmap/3d-scanning/mobile/scanning@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    width: 237px;
+    height: 165px;
+    margin-top: 0;
+    // margin-right: 6px;
+    right: 6px;
+    top: 50%;
+    background-image: url(../images/bitmap/3d-scanning/tablet/scanning.jpg);
+    background-size: 237px 165px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bitmap/3d-scanning/tablet/scanning@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 435px;
+    height: 268px;
+    right: 269px;
+    background-image: url(../images/bitmap/3d-scanning/desktop/scanning.jpg);
+    background-size: 435px 268px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bitmap/3d-scanning/desktop/scanning@2x.jpg);
+    }
+  }
+}
+
+.decor1 {
+  display: none;
+  position: absolute;
+  //   right: 32px;
+  width: 71px;
+  height: 74px;
+  background-color: $spotBackgroundColor;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 25px 0px;
+  right: 32px;
+  top: 100%;
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 136px;
+    height: 144px;
+  }
+}
+.decor2 {
+  display: none;
+  position: absolute;
+
+  width: 71px;
+  height: 63px;
+  right: 32px;
+  top: 0;
+  background-color: $spotBackgroundColor;
+  box-shadow: -17px -20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 35px 0px 0px;
+  transform: rotate(180deg);
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 136px;
+    height: 144px;
+  }
+}
+
+.decor3 {
+  display: none;
+  position: absolute;
+  width: 82px;
+  height: 78px;
+  left: 35px;
+  top: 60px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 72px 0px;
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
