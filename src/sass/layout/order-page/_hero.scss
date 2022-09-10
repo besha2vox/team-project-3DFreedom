@@ -1,7 +1,7 @@
 .order-page {
   padding-top: 18px;
   padding-bottom: 40px;
-
+  background: rgb(216, 215, 215);
   position: relative;
   @media screen and (min-width: $tablet) {
     padding-top: 30px;
@@ -22,6 +22,10 @@
   @media screen and (min-width: $desktop) {
     padding: 45px 0 0 149px;
   }
+}
+
+.order-page__img {
+  border-radius: 15px;
 }
 
 .order-page__content {
@@ -106,19 +110,31 @@
 
 .decoration {
   position: absolute;
-  height: 82px;
-  width: 82px;
   background-color: $spotBackgroundColor;
   box-shadow: $spotShadow;
+}
+.decoration--right {
+  @media screen and (min-width: $tablet) {
+    height: 64px;
+    width: 71px;
+    border-radius: 0px 0px 0px 35px;
+    right: 32px;
+    top: 7px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 82px;
+    width: 137px;
+    border-radius: 0px 0px 0px 72px;
+    right: 32px;
+    top: 7px;
+  }
+}
+.decoration--left {
+  height: 82px;
+  width: 82px;
   border-radius: 0px 0px 72px 0px;
+  left: 35px;
   @media screen and (max-width: 1439px) {
     display: none;
   }
-}
-.decoration--right {
-  right: 32px;
-  top: 7px;
-}
-.decoration--left {
-  left: 35px;
 }
