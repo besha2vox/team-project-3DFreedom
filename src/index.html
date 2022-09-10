@@ -1,141 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"
-    />
-    <title>3DFreedom</title>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
 
-  <body>
-    <!-- Подлежит удалению -->
-    <div class="container">
-      <ul
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          padding: 40px 0;
-          gap: 30px;
-          text-transform: uppercase;
-        "
-        class="list"
-      >
-        <li>
-          <a
-            style="
-              padding: 5px;
-              border: 1px solid #487996;
-              font-size: 24px;
-              color: #487996;
-            "
-            href="./index.html"
-            class="link"
-            >gallery</a
-          >
-        </li>
-        <li>
-          <a
-            style="
-              padding: 5px;
-              border: 1px solid #487996;
-              font-size: 24px;
-              color: #487996;
-            "
-            href="./modeling-page.html"
-            class="link"
-            >modeling-page</a
-          >
-        </li>
-        <li>
-          <a
-            style="
-              padding: 5px;
-              border: 1px solid #487996;
-              font-size: 24px;
-              color: #487996;
-            "
-            href="./scanning-page.html"
-            class="link"
-            >scanning-page</a
-          >
-        </li>
-        <li>
-          <a
-            style="
-              padding: 5px;
-              border: 1px solid #487996;
-              font-size: 24px;
-              color: #487996;
-            "
-            href="./printing-page.html"
-            class="link"
-            >printing-page</a
-          >
-        </li>
-        <li>
-          <a
-            style="
-              padding: 5px;
-              border: 1px solid #487996;
-              font-size: 24px;
-              color: #487996;
-            "
-            href="./order-page.html"
-            class="link"
-            >order-page</a
-          >
-        </li>
-        <li>
-          <a
-            style="
-              padding: 5px;
-              border: 1px solid #487996;
-              font-size: 24px;
-              color: #487996;
-            "
-            href="./contacts-page.html"
-            class="link"
-            >contacts-page</a
-          >
-        </li>
-      </ul>
-    </div>
-    <!-- Подлежит удалению -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css" />
+  <title>3DFreedom</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <script type="module" src="./index.js"></script>
+</head>
 
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/page-header.html"></include>
-    <include src="./partials/main-page/hero.html"></include>
-    <include src="./partials/main-page/gallery.html"></include>
-    <include src="./partials/main-page/more-photo.html"></include>
-    <include src="./partials/page-footer.html"></include>
 
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"
-    ></script>
-  </body>
+<body>
+  <!-- Подлежит удалению -->
+  <div class="container">
+    <ul
+      style="display: flex; flex-wrap: wrap; justify-content: center; padding: 40px 0; gap: 30px; text-transform: uppercase;"
+      class="list">
+      <li><a style="padding: 5px; border: 1px solid #487996; font-size: 24px; color: #487996" href="./index.html"
+          class="link">gallery</a>
+      </li>
+      <li><a style="padding: 5px; border: 1px solid #487996; font-size: 24px; color: #487996"
+          href="./modeling-page.html" class="link">modeling-page</a>
+      </li>
+      <li><a style="padding: 5px; border: 1px solid #487996; font-size: 24px; color: #487996"
+          href="./scanning-page.html" class="link">scanning-page</a>
+      </li>
+      <li><a style="padding: 5px; border: 1px solid #487996; font-size: 24px; color: #487996"
+          href="./printing-page.html" class="link">printing-page</a>
+      </li>
+      <li><a style="padding: 5px; border: 1px solid #487996; font-size: 24px; color: #487996" href="./order-page.html"
+          class="link">order-page</a></li>
+      <li><a style="padding: 5px; border: 1px solid #487996; font-size: 24px; color: #487996"
+          href="./contacts-page.html" class="link">contacts-page</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Подлежит удалению -->
+
+
+  <!-- ❗️❗️❗️ Add partials like so for every page -->
+  <include src="./partials/page-header.html"></include>
+  <include src="./partials/main-page/hero.html"></include>
+  <include src="./partials/main-page/gallery.html"></include>
+  <include src="./partials/main-page/more-photo.html"></include>
+  <include src="./partials/page-footer.html"></include>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+</body>
+
 </html>
