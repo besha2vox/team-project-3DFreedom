@@ -1,7 +1,11 @@
-.model{
+.container__changes{
     @media screen and (min-width: $tablet) {
   padding-top: 29.95px;
-  position: relative;}}
+  position: relative;}
+   @media screen and (min-width: $desktop) {
+    padding-top: 44.71px;
+   }
+}
 
   .decor {
     display: none;
@@ -12,19 +16,35 @@
       height: 63.79px;
       right: 32px;
       top: 8.42px;
-      background-color: #FFFFFF;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      background-color: $spotBackgroundColor;
+      box-shadow: $spotShadow;
         border-radius: 0px 0px 0px 35px;}
-  }
-        
-  .title--changes{
-    @media screen and (min-width: $tablet) {
-           font-size: 36px;}
+                 @media screen and (min-width: $desktop) {
+                    width: 137px;
+                    height: 83px;
+                    top: 6.71px;
+                    border-radius: 0px 0px 0px 72px;
+                    }
+                 }
+                            
+  .second--decor {
+    display: none;
     @media screen and (min-width: $desktop) {
-            margin-left: 117px;
-            font-size: 48px;
+        display: block;
+            width: 82px;
+            height:78px;
+            top:44;
+            background: $spotBackgroundColor;
+            left:35px;
+            box-shadow: $spotShadow;
+            border-radius: 0px 0px 72px 0px;
         }
-  }
+
+  }      
+  .title--changes{
+    @media screen and (min-width: $desktop) {
+            margin-left: 117px; 
+        } }
 
 .model-list__item{ 
 width:calc((100% - 20px)/2);
@@ -32,10 +52,9 @@ width:calc((100% - 20px)/2);
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    list-style: none;
     display: flex;
-   background: #FFFFFF;
-    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+   background: $spotBackgroundColor;
+    box-shadow: $listItemShadow;
     border-radius: 50px 0px;
     @media screen and (min-width: $tablet){
     width:calc((100% - 32px)/4);
@@ -45,17 +64,17 @@ width:calc((100% - 20px)/2);
     height: 382px;
 }
 }
- .model-list__item .img{
-    width:auto;
- }
-
+ 
 .model-list__text {
     text-align: center;
     font-weight: 400;
-        font-size: 14px;
-        line-height: 1.28;
-       color: #487996;
-       
+    font-size: 14px;
+     line-height: 1.28;
+    color: $accentColor;
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+        line-height: 1.27;
+        }
         }
 
 
@@ -69,5 +88,8 @@ width:calc((100% - 20px)/2);
     flex-wrap: nowrap;
         gap: 32px;
         }
+                 @media screen and (min-width: $desktop) {
+                    margin-top: 24px;
+                 }
 }
 

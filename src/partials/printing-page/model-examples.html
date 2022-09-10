@@ -1,9 +1,10 @@
 <section class="model">
-  <div class="container">
+  <div class="container container__changes">
     <div class="decor"></div>
+    <div class="decor second--decor"></div>
     <h1 class="title title--changes">МИ СТВОРЮЄМО</h1>
 
-    <ul class="model-list">
+    <ul class="model-list list">
       <li class="model-list__item">
         <picture>
           <source
@@ -11,6 +12,7 @@
               /src/images/bitmap/print/desktop/prototype.png    1x,
               /src/images/bitmap/print/desktop/prototype@2x.png 2x
             "
+            type="image/png"
             media="(min-width: 1440px)"
           />
 
@@ -19,7 +21,7 @@
               /src/images/bitmap/print/tablet/prototype.png    1x,
               /src/images/bitmap/print/tablet/prototype@2x.png 2x
             "
-            media="(min-width: 768px)"
+            media="(min-width: 768px) and (max-width: 1439px)"
           />
 
           <source
@@ -31,11 +33,12 @@
           />
           <img
             src="/src/images/bitmap/print/desktop/prototype.png"
-            sizes="(max-width: 767px) 90.48px, (min-width: 768px) 105.79px, (min-width: 1440px) 241.72px, 100vw"
             alt="прототип"
           />
         </picture>
-        <p class="model-list__text">ПРОТОТИПИ</p>
+        <div class="dd">
+          <p class="model-list__text">ПРОТОТИПИ</p>
+        </div>
       </li>
 
       <li class="model-list__item">
@@ -52,7 +55,7 @@
               /src/images/bitmap/print/tablet/maquette.png    1x,
               /src/images/bitmap/print/tablet/maquette@2x.png 2x
             "
-            media="(min-width: 768px)"
+            media="(min-width: 768px) and (max-width: 1439px)"
           />
 
           <source
@@ -60,17 +63,16 @@
               /src/images/bitmap/print/mobile/maquette.png    1x,
               /src/images/bitmap/print/mobile/maquette@2x.png 2x
             "
-            width="100.88"
-            height="63.62"
             media="(max-width: 767px)"
           />
           <img
             src="/src/images/bitmap/print/desktop/maquette.png"
-            sizes="(max-width: 767px) 100.88px, (min-width: 768px) 117.95px, 100vw"
             alt="макети"
           />
         </picture>
-        <p class="model-list__text">МАКЕТИ</p>
+        <div class="dd">
+          <p class="model-list__text">МАКЕТИ</p>
+        </div>
       </li>
       <li class="model-list__item">
         <picture>
@@ -86,7 +88,7 @@
               /src/images/bitmap/print/tablet/decor.png    1x,
               /src/images/bitmap/print/tablet/decor@2x.png 2x
             "
-            media="(min-width: 768px)"
+            media="(min-width: 768px) and (max-width: 1439px)"
           />
 
           <source
@@ -96,11 +98,7 @@
             "
             media="(max-width: 767px)"
           />
-          <img
-            src="/src/images/bitmap/print/desktop/decor.png"
-            sizes="(max-width: 767px) 43.16px, (min-width: 768px) 50.46px, 100vw"
-            alt="декор"
-          />
+          <img src="/src/images/bitmap/print/desktop/decor.png" alt="декор" />
         </picture>
         <p class="model-list__text">ДЕКОР</p>
       </li>
@@ -118,7 +116,7 @@
               /src/images/bitmap/print/tablet/3d-coub.png    1x,
               /src/images/bitmap/print/tablet/3d-coub@2x.png 2x
             "
-            media="(min-width: 768px)"
+            media="(min-width: 768px) and (max-width: 1439px)"
           />
 
           <source
@@ -130,7 +128,6 @@
           />
           <img
             src="/src/images/bitmap/print/desktop/3d-coub.png"
-            sizes="(max-width: 767px) 83.72px, (min-width: 768px) 97.89px, 100vw"
             alt="корпоративний дизайн"
           />
         </picture>
