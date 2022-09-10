@@ -1,0 +1,53 @@
+.process-description {
+    position: relative;
+padding-top: 38px;
+padding-bottom: 60px;
+
+@media screen and (min-width:$tablet) {
+    padding-top: 40px;
+}
+   
+@media screen and (min-width:$desktop) {
+     padding-top: 74px;
+     padding-bottom: 80px;   
+    }
+}
+.process-description__container {
+    @extend .container;
+    position: relative;
+    }
+
+.process-list {
+}
+.process-list__item {
+}
+
+
+.process-description__first-decor {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    background-color: $spotBackgroundColor;
+    border-radius: 72px;
+    box-shadow: $spotShadow;
+
+}
+.process-description__second-decor {
+}
+.process-description__fourth-decor {
+}
+.process-description__third-decor {
+}
+.process-description__fifth-decor {
+
+}
+.process-list__picture {
+}
+.process-list__text {
+}
+.process-list__text__paragraph {
+}
+.process-list__text__paragraph--style {
+}
+.order-button {
+}
