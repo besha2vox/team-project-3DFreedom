@@ -2,7 +2,7 @@
   @media screen and(max-width:767px) {
     width: 480px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop) {
     padding: 0 149px;
   }
 }
@@ -16,32 +16,32 @@
   margin-top: 16px;
   width: 100%;
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width: $tablet) {
     width: 704px;
     gap: 32px;
     margin-top: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 80px;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width: 1200px) {
     width: 100%;
     margin-top: 60px;
     margin-bottom: 16px;
   }
-  @media screen and(min-width:1440px) {
+  @media screen and(min-width: $desktop) {
     width: 100%;
     margin-top: 60px;
-    margin-bottom: 16px;
   }
 
   &__item {
-    @media screen and(max-width:767px) {
+    cursor: pointer;
+    @media screen and(max-width: 767px) {
       width: 100%;
     }
 
     &:nth-child(n + 4) {
       display: none;
 
-      @media screen and(min-width:768px) {
+      @media screen and(min-width: $tablet) {
         display: block;
       }
     }
@@ -53,7 +53,17 @@
   width: 45px;
   height: 45px;
   margin: 0 auto;
-  fill: #487996;
+  fill: $accentColor;
+  margin-bottom: 60px;
+  @media screen and(min-width: $tablet) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-bottom: 100px;
+    width: 44px;
+  height: 44px;
+  }
 }
 
 // Модальное окно
@@ -72,14 +82,14 @@
 .modal-content {
   margin: 20% auto;
   width: 100%;
-  @media screen and(min-width:480px) {
+  @media screen and(min-width: $mobile) {
     width: 480px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 735px;
     margin: 10% auto;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $desktop) {
     width: 1000px;
     margin: 10% auto;
   }
@@ -90,23 +100,42 @@
   top: 6%;
   left: 50%;
   display: block;
-  color: #fff;
+  color: $spotBackgroundColor;
   font-size: 28px;
   font-weight: bold;
-  @media screen and(min-width:480px) {
+  @media screen and(min-width: $mobile) {
     top: 10%;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
    top: 5%;
   }
   @media screen and (min-width: 1200px) {
 top: 10%;
   }
-}
+    &__icon {
+      width: 11px;
+      height: 11px;
+      fill: $spotBackgroundColor;
+      &:hover,
+      &:focus {
+        fill: $accentColor;
+      }
+      @media screen and(min-width: $tablet) {
+        width: 20px;
+        height: 20px;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+  }
+
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: $accentColor;
   text-decoration: none;
   cursor: pointer;
 }
@@ -116,23 +145,23 @@ top: 10%;
 // Слайдер
 .slider-modal { 
   &__img {
-    @media screen and(min-width:320px) {
+    @media screen and(min-width: 320px) {
       width: 80%;
       margin: 0 auto;
     }
-    @media screen and(min-width:1200px) {
+    @media screen and(min-width: 1200px) {
       width: 80%;
     }
   }
   &__img-big {
-    @media screen and(min-width:320px) {
+    @media screen and(min-width: 320px) {
       width: 80%;
       margin: 0 auto;
     }
-    @media screen and(min-width:768px) {
+    @media screen and(min-width: $tablet) {
       width: 60%;
     }
-    @media screen and(min-width:1200px) {
+    @media screen and(min-width: 1200px) {
       width: 50%;
     }
   }
@@ -155,12 +184,28 @@ top: 10%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   left: 15px;
   border-radius: 0 3px 3px 0;
+  &__icon {
+    width: 11px;
+    height: 10px;
+    fill: $spotBackgroundColor;
+    &:hover,
+    &:focus {
+      fill: $accentColor;
+    }
+    @media screen and(min-width: $tablet) {
+      width: 26px;
+      height: 26px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 42px;
+      height: 42px;
+    }
+  }
 }
 
 .next {
@@ -170,13 +215,29 @@ top: 10%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   right: 15px;
   border-radius: 3px 0 0 3px;
+  &__icon {
+    width: 11px;
+    height: 10px;
+    fill: $spotBackgroundColor;
+    &:hover,
+    &:focus {
+      fill: $accentColor;
+    }
+    @media screen and(min-width: $tablet) {
+      width: 26px;
+      height: 26px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 42px;
+      height: 42px;
+    }
+  }
 }
 
 .dot {
