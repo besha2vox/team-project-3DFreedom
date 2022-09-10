@@ -1,0 +1,47 @@
+.contact-hero__spot {
+  position: absolute;
+  background: $spotBackgroundColor;
+  box-shadow: $spotShadow;
+}
+
+.contact-hero__spot1 {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    top: -30px;
+    right: 32px;
+    width: 71.41px;
+    height: 63.79px;
+    border-radius: 0px 35px 0px 0px;
+    transform: rotate(180deg);
+  }
+  @media screen and (min-width: $desktop) {
+    top: -45px;
+    width: 83px;
+    height: 137px;
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(90deg);
+  }
+}
+.contact-hero__spot2 {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    top: -45px;
+    left: 3px;
+    width: 82px;
+    height: 78px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+.contact-hero__spot3 {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    bottom: -119px;
+    right: 0;
+    width: 136.83px;
+    height: 144px;
+    border-radius: 72px 0px;
+  }
+}
