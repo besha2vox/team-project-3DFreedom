@@ -14,7 +14,7 @@
             </a>
             <div class="mobile-menu">
                 <button type="button" class="mobile-menu__toggle toggle-menu js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
-                    <svg class="mobile-menu__icons" aria-label="Переключатель мобільного меню" width="32" height="18">
+                    <svg class="mobile-menu__icons" aria-label="Переключатель мобільного меню" width="32">
                         <use class="mobile-menu__icon-menu" href="/src/images/svg/sprite.svg#icon-mobile-menu"></use>
                         <use class="mobile-menu__icon-cross" href="/src/images/svg/sprite.svg#icon-cross"></use>
                     </svg>
@@ -23,14 +23,14 @@
                     <nav class="mobile-menu__nav">
                         <ul class="mobile-menu__list list">
                             <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="./main-page/">Головна</a></li>
-                            <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="">Послуги</a>
+                            <li class="mobile-menu__item"><p class="mobile-menu__item--link link">Послуги</p>
                                 <ul class="mobile-menu__service-list list">
-                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" href="">3D Моделювання</a></li>
-                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" ="">3D Сканування</a></li>
-                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" href="">3D Друк</a></li>
+                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" href="./modeling-page.html">3D Моделювання</a></li>
+                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" ="./scanning-page.html">3D Сканування</a></li>
+                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" href="./printing-page.html">3D Друк</a></li>
                             </li>
-                            <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="">Замовити</a></li>
-                            <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="">Контакти</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="./order-page.html">Замовити</a></li>
+                            <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="./contacts-page.html">Контакти</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -42,8 +42,20 @@
                             <use class="contacts-menu__icon-menu" href="/src/images/svg/sprite.svg#icon-phone"></use>
                         </svg>
                     </div>
-                    <div class="mobile-contacts--background-triangle"></div>
+                    <svg class="mobile-contacts--background-triangle" width="38" height="26">
+                        <use href="/src/images/svg/sprite.svg#icon-contact-triangle"></use>
+                    </svg>
                     <div class="mobile-contacts__content">
+                        <ul class="mobile-contacts__list list">
+                            <li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="tel:+380936432288"
+                                    class="mobile-contacts__link">+38 (093) 643 22 88</a>
+                            </li>
+                            <li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="tel:+380503454423"
+                                    class="mobile-contacts__link">+38 (050) 345 44 23</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-contacts__not-dropdown">
                         <ul class="mobile-contacts__list list">
                             <li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="tel:+380936432288"
                                     class="mobile-contacts__link">+38 (093) 643 22 88</a>
@@ -55,10 +67,10 @@
                     </div>
                 </div>
                 <div class="menu-lang__dropdowncontent">
-                    <div class="menu-lang__button">ENG</div>
+                    <div class="menu-lang__button">UKR</div>
                     <div class="menu-lang__content">
                         <ul class="menu-lang__list list">
-                            <li class="menu-lang__item"><a class="menu-lang__link link" href="">UKR</a></li>
+                            <li class="menu-lang__item"><a class="menu-lang__link link" href="">ENG</a></li>
                             <li class="menu-lang__item"><a class="menu-lang__link link" href="">POL</a></li>
                         </ul>
                     </div>
