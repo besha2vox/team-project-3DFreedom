@@ -1,28 +1,30 @@
 .scan-process {
   display: flex;
-
-  background-color: $spotBackgroundColor;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $spotBackgroundColor;
+    @media screen and (min-width: $desktop) {
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+  }
 }
 
 .scan-process__container {
   display: flex;
-  padding-top: 49px;
-  padding-bottom: 60px;
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: $tablet) {
     min-width: 704px;
   }
-  @media screen and (min-width: $desktop) {
-    padding-top: 100px;
-  }
 }
 
 .container__title {
+  align-self: start;
   padding-bottom: 16px;
-  @media screen and (min-width: $tablet) {
-    align-self: start;
-  }
   @media screen and (min-width: $desktop) {
     margin-left: 130px;
     margin-bottom: 40px;
@@ -36,6 +38,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   gap: 16px;
+
   @media screen and (max-width: 768px) {
     max-width: 280px;
   }
@@ -53,7 +56,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  align-items: flex-end;
   padding-bottom: 20px;
   padding-left: 8px;
   padding-right: 14px;
