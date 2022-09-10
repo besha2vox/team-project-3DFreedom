@@ -1,4 +1,10 @@
+.model {
+  padding-top: 18px;
+}
+
 .container__changes {
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: $tablet) {
     padding-top: 29.95px;
     position: relative;
@@ -88,12 +94,15 @@
 .model-list {
   margin-top: 16px;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
 
+  @media screen and (max-width: 767px) {
+    align-self: center;
+    width: 280px;
+  }
+
   @media screen and (min-width: $tablet) {
-    justify-content: center;
     flex-wrap: nowrap;
     gap: 32px;
   }
