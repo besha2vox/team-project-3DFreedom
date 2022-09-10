@@ -1,0 +1,73 @@
+.contact-page__container {
+  padding: 50px 149px 80px;
+}
+.order-page__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-direction: column;
+    row-gap: 30px;
+    text-align: right;
+  }
+}
+.contacts-page__contacts {
+  @extend .order-page__contacts;
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    text-align: left;
+    row-gap: 68px;
+  }
+}
+.contacts__thumb:first-child {
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+    margin-right: 25px;
+  }
+}
+
+.contacts__thumb {
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+    &--right {
+      margin-left: auto;
+    }
+  }
+}
+
+.contacts__sub-title {
+  margin-bottom: 8px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8;
+  @media screen and (min-width: $desktop) {
+    row-gap: 18px;
+  }
+}
+
+.contacts__link {
+  color: $TextColor;
+  transition: color 250ms $cubicBezier;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.contacts__spot {
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 129px;
+    left: -183px;
+    width: 136.83px;
+    height: 144px;
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 72px;
+  }
+}
