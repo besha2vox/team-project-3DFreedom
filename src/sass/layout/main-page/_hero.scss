@@ -1,4 +1,17 @@
-.hero {
+.main-page__hero {
+  padding-top: 18px;
+  padding-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 60px;
+  }
+}
+
+.hero__container {
   position: relative;
 }
 
@@ -8,7 +21,6 @@
   font-size: 18px;
   line-height: 1.17;
   text-align: center;
-  padding-top: 18px;
   margin-bottom: 32px;
   width: 280px;
   margin-right: auto;
@@ -17,14 +29,12 @@
   @media screen and (min-width: $tablet) {
     font-size: 24px;
     width: 336px;
-    padding-top: 30px;
     margin-bottom: 60px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 48px;
     width: 630px;
-    padding-top: 32px;
   }
 }
 
@@ -33,19 +43,16 @@
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-bottom: 20px;
   margin-top: 32px;
 
   @media screen and (min-width: $tablet) {
     font-size: 18px;
     line-height: 1.17;
     margin-top: 60px;
-    padding-bottom: 30px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 36px;
-    padding-bottom: 60px;
   }
 }
 
@@ -133,7 +140,15 @@
 .hero__right-blocks {
   right: 32px;
 }
-
+.hero__right-block1,
+.hero__left-block2,
+.hero__left-block6,
+.hero__right-block2,
+.hero__right-block6 {
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
 .hero__left-block1,
 .hero__left-block2,
 .hero__left-block3,
@@ -171,6 +186,14 @@
   }
 }
 
+.hero__gallery-anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 .hero__left-block1,
 .hero__left-block5 {
   border-radius: 0px 0px 35px 0px;
@@ -186,7 +209,16 @@
   border-radius: 72px;
 }
 
+.hero__left-block1 {
+  top: -30px;
+
+  @media screen and (min-width: $desktop) {
+    top: -32px;
+  }
+}
+
 .hero__left-block2 {
+  top: -30px;
   right: 0%;
   background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-1.jpg);
 
@@ -205,40 +237,48 @@
     (min-resolution: 2dppx) {
     background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-1@2x.jpg);
   }
+  @media screen and (min-width: $desktop) {
+    top: -32px;
+  }
 }
 
 .hero__left-block3 {
   right: 0%;
-  top: 20%;
+  top: 45px;
   border-radius: 0px 35px 0px 0px;
 
   @media screen and (min-width: $desktop) {
     border-radius: 0px 72px 0px 0px;
+    top: 113px;
   }
 }
 
 .hero__left-block4 {
-  top: 40%;
+  top: 118px;
   border-radius: 0px 0px 0px 35px;
 
   @media screen and (min-width: $desktop) {
+    top: 256px;
     border-radius: 0px 0px 0px 72px;
   }
 }
 
 .hero__left-block5 {
   right: 0%;
-  top: 60%;
+  top: 192px;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: $desktop) {
+    top: 400px;
+  }
 }
 
 .hero__left-block6 {
-  top: 284.37px;
+  top: 256px;
 
   @media screen and (min-width: $desktop) {
-    top: 554.12px;
+    top: 522px;
   }
 
   background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-3.jpg);
@@ -260,7 +300,16 @@
   }
 }
 
+.hero__right-block1 {
+  top: -30px;
+
+  @media screen and (min-width: $desktop) {
+    top: -32px;
+  }
+}
+
 .hero__right-block2 {
+  top: -30px;
   right: 0px;
   border-radius: 0px 0px 72px 0px;
   background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-2.jpg);
@@ -280,34 +329,43 @@
     (min-resolution: 2dppx) {
     background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-2@2x.jpg);
   }
+  @media screen and (min-width: $desktop) {
+    top: -32px;
+  }
 }
 
 .hero__right-block3 {
-  top: 20%;
+  top: 45px;
+
+  @media screen and (min-width: $desktop) {
+    top: 113px;
+  }
 }
 
 .hero__right-block4 {
   right: 0px;
-  top: 40%;
+  top: 118px;
   border-radius: 25px 0px;
 
   @media screen and (min-width: $desktop) {
+    top: 256px;
     border-radius: 72px 0px;
   }
 }
 
 .hero__right-block5 {
-  top: 60%;
+  top: 192px;
   border-radius: 0px 0px 0px 35px;
 
   @media screen and (min-width: $desktop) {
+    top: 400px;
     border-radius: 0px 0px 0px 72px;
   }
 }
 
 .hero__right-block6 {
   right: 0px;
-  top: 60%;
+  top: 192px;
   border-radius: 72px 72px 0px 0px;
   background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-4.jpg);
 
@@ -326,14 +384,18 @@
     (min-resolution: 2dppx) {
     background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-4@2x.jpg);
   }
+  @media screen and (min-width: $desktop) {
+    top: 400px;
+  }
 }
 
 .hero__right-block7 {
   right: 0px;
-  top: 80%;
+  top: 266px;
   border-radius: 0px 0px 0px 35px;
 
   @media screen and (min-width: $desktop) {
+    top: 544px;
     border-radius: 0px 0px 0px 72px;
   }
 }
@@ -342,6 +404,14 @@
   width: 16.37px;
   height: 16.45px;
   fill: $iconColor;
+
+  .hero__gallery-anchor:hover > &,
+  .hero__gallery-anchor:focus > & {
+    animation-name: heroArrow;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
 
   @media screen and (min-width: $desktop) {
     width: 32.04px;
