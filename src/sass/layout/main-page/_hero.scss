@@ -1,0 +1,420 @@
+.main-page__hero {
+  padding-top: 18px;
+  padding-bottom: 20px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 60px;
+  }
+}
+
+.hero__container {
+  position: relative;
+}
+
+.hero__title {
+  font-family: $fontCaviarDreams;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 32px;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    width: 336px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 48px;
+    width: 630px;
+  }
+}
+
+.hero__text {
+  font-family: $fontCaviarDreams;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 32px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.17;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
+}
+
+.hero__main-pictures {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__main-picture1 {
+  margin-right: 15.06px;
+  width: 83.43px;
+  border-radius: 0px 35px 0px 0px;
+  overflow: hidden;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 29px;
+    width: 114px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 32px;
+    width: 203px;
+  }
+}
+
+.hero__main-picture2 {
+  margin-right: 14.24px;
+  width: 83.43px;
+  border-radius: 100px;
+  overflow: hidden;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 29px;
+    width: 114px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 31px;
+    width: 203px;
+  }
+}
+
+.hero__main-picture3 {
+  width: 83.84px;
+  border-radius: 0px 25px;
+  overflow: hidden;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
+
+  @media screen and (min-width: $tablet) {
+    width: 114px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 203px;
+  }
+}
+
+.hero__left-blocks,
+.hero__right-blocks {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 147.3px;
+    height: 370.25px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 288.36px;
+    height: 721.45px;
+  }
+}
+
+.hero__left-blocks {
+  @media screen and (min-width: $desktop) {
+    left: 30px;
+  }
+}
+
+.hero__right-blocks {
+  right: 32px;
+}
+.hero__right-block1,
+.hero__left-block2,
+.hero__left-block6,
+.hero__right-block2,
+.hero__right-block6 {
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+.hero__left-block1,
+.hero__left-block2,
+.hero__left-block3,
+.hero__left-block4,
+.hero__left-block5,
+.hero__left-block6,
+.hero__right-block1,
+.hero__right-block2,
+.hero__right-block3,
+.hero__right-block4,
+.hero__right-block5,
+.hero__right-block6 {
+  width: 73.65px;
+  height: 74.05px;
+  box-shadow: $spotShadow;
+  background-color: $spotBackgroundColor;
+  position: absolute;
+
+  @media screen and (min-width: $desktop) {
+    width: 144.18px;
+    height: 144.29px;
+  }
+}
+
+.hero__right-block7 {
+  width: 73.65px;
+  height: 63.76px;
+  box-shadow: $spotShadow;
+  background-color: $spotBackgroundColor;
+  position: absolute;
+
+  @media screen and (min-width: $desktop) {
+    width: 144.18px;
+    height: 124.25px;
+  }
+}
+
+.hero__gallery-anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__left-block1,
+.hero__left-block5 {
+  border-radius: 0px 0px 35px 0px;
+
+  @media screen and (min-width: $desktop) {
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.hero__left-block2,
+.hero__left-block6,
+.hero__right-block3 {
+  border-radius: 72px;
+}
+
+.hero__left-block1 {
+  top: -30px;
+
+  @media screen and (min-width: $desktop) {
+    top: -32px;
+  }
+}
+
+.hero__left-block2 {
+  top: -30px;
+  right: 0%;
+  background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-1.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-1@2x.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-1.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-1@2x.jpg);
+  }
+  @media screen and (min-width: $desktop) {
+    top: -32px;
+  }
+}
+
+.hero__left-block3 {
+  right: 0%;
+  top: 45px;
+  border-radius: 0px 35px 0px 0px;
+
+  @media screen and (min-width: $desktop) {
+    border-radius: 0px 72px 0px 0px;
+    top: 113px;
+  }
+}
+
+.hero__left-block4 {
+  top: 118px;
+  border-radius: 0px 0px 0px 35px;
+
+  @media screen and (min-width: $desktop) {
+    top: 256px;
+    border-radius: 0px 0px 0px 72px;
+  }
+}
+
+.hero__left-block5 {
+  right: 0%;
+  top: 192px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: $desktop) {
+    top: 400px;
+  }
+}
+
+.hero__left-block6 {
+  top: 256px;
+
+  @media screen and (min-width: $desktop) {
+    top: 522px;
+  }
+
+  background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-3.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-3@2x.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-3.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-3@2x.jpg);
+  }
+}
+
+.hero__right-block1 {
+  top: -30px;
+
+  @media screen and (min-width: $desktop) {
+    top: -32px;
+  }
+}
+
+.hero__right-block2 {
+  top: -30px;
+  right: 0px;
+  border-radius: 0px 0px 72px 0px;
+  background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-2.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-2@2x.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-2.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-2@2x.jpg);
+  }
+  @media screen and (min-width: $desktop) {
+    top: -32px;
+  }
+}
+
+.hero__right-block3 {
+  top: 45px;
+
+  @media screen and (min-width: $desktop) {
+    top: 113px;
+  }
+}
+
+.hero__right-block4 {
+  right: 0px;
+  top: 118px;
+  border-radius: 25px 0px;
+
+  @media screen and (min-width: $desktop) {
+    top: 256px;
+    border-radius: 72px 0px;
+  }
+}
+
+.hero__right-block5 {
+  top: 192px;
+  border-radius: 0px 0px 0px 35px;
+
+  @media screen and (min-width: $desktop) {
+    top: 400px;
+    border-radius: 0px 0px 0px 72px;
+  }
+}
+
+.hero__right-block6 {
+  right: 0px;
+  top: 192px;
+  border-radius: 72px 72px 0px 0px;
+  background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-4.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-4@2x.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-4.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-4@2x.jpg);
+  }
+  @media screen and (min-width: $desktop) {
+    top: 400px;
+  }
+}
+
+.hero__right-block7 {
+  right: 0px;
+  top: 266px;
+  border-radius: 0px 0px 0px 35px;
+
+  @media screen and (min-width: $desktop) {
+    top: 544px;
+    border-radius: 0px 0px 0px 72px;
+  }
+}
+
+.hero__icon {
+  width: 16.37px;
+  height: 16.45px;
+  fill: $iconColor;
+
+  .hero__gallery-anchor:hover > &,
+  .hero__gallery-anchor:focus > & {
+    animation-name: heroArrow;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 32.04px;
+    height: 32.07px;
+  }
+}
