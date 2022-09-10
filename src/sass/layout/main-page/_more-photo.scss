@@ -86,11 +86,22 @@
 }
 
 .close {
+  position: relative;
+  top: 6%;
+  left: 50%;
   display: block;
   color: #fff;
-  float: right;
   font-size: 28px;
   font-weight: bold;
+  @media screen and(min-width:480px) {
+    top: 10%;
+  }
+  @media screen and (min-width: 768px) {
+   top: 5%;
+  }
+  @media screen and (min-width: 1200px) {
+top: 10%;
+  }
 }
 
 .close:hover,
@@ -103,7 +114,7 @@
 
 
 // Слайдер
-.slider-modal {
+.slider-modal { 
   &__img {
     @media screen and(min-width:320px) {
       width: 80%;
@@ -120,6 +131,9 @@
     }
     @media screen and(min-width:768px) {
       width: 60%;
+    }
+    @media screen and(min-width:1200px) {
+      width: 50%;
     }
   }
 }

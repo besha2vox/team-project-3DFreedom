@@ -4,7 +4,7 @@
 
     <ul class="more-photo-list list" >
       <li class="more-photo-list__item">
-        <picture id="myBtn1">
+        <picture onclick="openModal();currentSlide(1)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -66,13 +66,13 @@
           <img
             class="more-photo-list__img"
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-1@2x.jpg"
-            alt=""
+            alt="3-d модельки"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn2">
+        <picture onclick="openModal();currentSlide(2)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -135,13 +135,13 @@
           <img
             class="more-photo-list__img"
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-2@2x.jpg"
-            alt=""
+            alt="3-модель арки"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn3">
+        <picture onclick="openModal();currentSlide(3)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -205,13 +205,13 @@
           <img
             class="more-photo-list__img"
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-3@2x.jpg"
-            alt=""
+            alt="3-d модель Волли"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn4">
+        <picture onclick="openModal();currentSlide(4)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -273,13 +273,13 @@
 
           <img
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-4.jpg"
-            alt=""
+            alt="3-d модель черепа"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn5">
+        <picture onclick="openModal();currentSlide(5)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -342,13 +342,13 @@
 
           <img
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-5.jpg"
-            alt=""
+            alt="3-d модель танка"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn6">
+        <picture onclick="openModal();currentSlide(6)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -411,13 +411,13 @@
 
           <img
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-6.jpg"
-            alt=""
+            alt="3-d модель настольных ламп"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn7">
+        <picture onclick="openModal();currentSlide(7)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -480,13 +480,13 @@
 
           <img
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-7.jpg"
-            alt=""
+            alt="3-d модель корпуса автомобиля"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn8">
+        <picture onclick="openModal();currentSlide(8)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -549,13 +549,13 @@
 
           <img
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-8.jpg"
-            alt=""
+            alt="3-dмодель мечети"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn9">
+        <picture onclick="openModal();currentSlide(9)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -618,13 +618,13 @@
 
           <img
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-9.jpg"
-            alt=""
+            alt="3-d модель лампы-грибочка"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn10">
+        <picture onclick="openModal();currentSlide(10)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -687,13 +687,13 @@
 
           <img
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-10.jpg"
-            alt=""
+            alt="3-д модель какой-то штуки"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn11">
+        <picture onclick="openModal();currentSlide(11)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -756,13 +756,13 @@
 
           <img
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-11.jpg"
-            alt=""
+            alt="3-d модель тесла-кибер-трака"
           />
         </picture>
       </li>
 
       <li class="more-photo-list__item">
-        <picture id="myBtn12">
+        <picture onclick="openModal();currentSlide(12)">
           <source
             type="image/webp"
             media="(min-width: 1440px)"
@@ -825,7 +825,7 @@
 
           <img
             src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-12.jpg"
-            alt=""
+            alt="3-d модель горшочка для сукулентов"
           />
         </picture>
       </li>
@@ -837,8 +837,9 @@
 
     <!-- Слайдер в модальном окне -->
     <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
-        <span class="close"></span>         
+         
     <div class="slideshow-container">
       <div class="mySlides fade">
               <img
@@ -850,7 +851,7 @@
                 "
                 sizes="(min-width: 1200vw) 50vw, (min-width: 768vw) 50vw, (min-width: 320px) 70w, 50vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-1@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Грут, череп, миньон и компания"
               /></div>
 
               <div class="mySlides fade">
@@ -863,7 +864,7 @@
                 "
                 sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-2@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Арка из платика"
               /></div>
 
               <div class="mySlides fade">
@@ -876,7 +877,7 @@
                 "
                 sizes="(min-width: 1200px) 400px, (min-width: 768px) 300px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-3@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Пластиковый Волли"
               /></div>
 
               <div class="mySlides fade">
@@ -889,7 +890,7 @@
                 "
                 sizes="(min-width: 1200px) 400px, (min-width: 768px) 300px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-4@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Моделька черепа в сеточку"
               /></div>
 
               <div class="mySlides fade">
@@ -902,7 +903,7 @@
                 "
                 sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-5@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Моделька танка из World of Tanks"
               /></div>
 
               <div class="mySlides fade">
@@ -915,7 +916,7 @@
                 "
                 sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-6@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Лампы из Pixar"
               /></div>
 
               <div class="mySlides fade">
@@ -928,7 +929,7 @@
                 "
                 sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-7@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Корпус бэт-мобиля"
               /></div>
 
               <div class="mySlides fade">
@@ -941,7 +942,7 @@
                 "
                 sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-8@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Мечеть из Алладина =)"
               /></div>
 
               <div class="mySlides fade">
@@ -954,7 +955,7 @@
                 "
                 sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-9@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Лампа-грибочек"
               /></div>
 
               <div class="mySlides fade">
@@ -967,7 +968,7 @@
                 "
                 sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-10@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Толи колонки, толи освежители воздуха..."
               /></div>
 
               <div class="mySlides fade">
@@ -980,7 +981,7 @@
                 "
                 sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-11@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Трак Иллона Маска"
               /></div>
 
               <div class="mySlides fade">
@@ -993,7 +994,7 @@
                 "
                 sizes="(min-width: 1200px) 800px, (min-width: 768px) 500px, (min-width: 320px) 70w, 100vw"
                 src="/src/images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-12@2x.jpg"
-                alt="Описание изображения для всех версий"
+                alt="Горшочек для суккулентов"
       
           /></div>
            <!-- Next and previous buttons -->
@@ -1005,110 +1006,4 @@
 </div>
 </section>
 
-<script>
-  // Get the modal
-let modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-let btn = document.getElementById("myBtn1");
-let btn2 = document.getElementById("myBtn2");
-let btn3 = document.getElementById("myBtn3");
-let btn4 = document.getElementById("myBtn4");
-let btn5 = document.getElementById("myBtn4");
-let btn6 = document.getElementById("myBtn5");
-let btn7 = document.getElementById("myBtn6");
-let btn8 = document.getElementById("myBtn7");
-let btn9 = document.getElementById("myBtn8");
-let btn10 = document.getElementById("myBtn9");
-let btn11 = document.getElementById("myBtn11");
-let btn12 = document.getElementById("myBtn12");
-let btn13 = document.getElementById("myBtn10");
-
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-btn2.onclick = function() {
-    modal.style.display = "block";
-}
-btn3.onclick = function() {
-    modal.style.display = "block";
-}
-btn4.onclick = function() {
-    modal.style.display = "block";
-}
-btn5.onclick = function() {
-    modal.style.display = "block";
-}
-btn6.onclick = function() {
-    modal.style.display = "block";
-}
-btn7.onclick = function() {
-    modal.style.display = "block";
-}
-btn8.onclick = function() {
-    modal.style.display = "block";
-}
-btn9.onclick = function() {
-    modal.style.display = "block";
-}
-btn10.onclick = function() {
-    modal.style.display = "block";
-}
-btn11.onclick = function() {
-    modal.style.display = "block";
-}
-btn12.onclick = function() {
-    modal.style.display = "block";
-}
-btn13.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-</script>
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-</script>
+<script src="/src/js/gallery-slider.js"></script>
