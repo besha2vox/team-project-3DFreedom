@@ -1,0 +1,312 @@
+.process-description {
+  padding-top: 38px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+.process-description__container {
+  position: relative;
+}
+
+//* Decor
+.process-description__first-decor,
+.process-description__second-decor,
+.process-description__third-decor,
+.process-description__fourth-decor,
+.process-description__fifth-decor {
+  z-index: -1;
+}
+
+.process-description__first-decor {
+  // Round
+  position: absolute;
+  background-color: $spotBackgroundColor;
+  box-shadow: $spotShadow;
+  border-radius: 25px 0px;
+  width: 74px;
+  height: 74px;
+  top: 134px;
+  left: -17px;
+
+  @media screen and (min-width: $tablet) {
+    top: 943px;
+    left: -49px;
+    width: 71px;
+    height: 74px;
+    border-radius: 72px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 124px;
+    left: -42px;
+    width: 144px;
+    height: 144px;
+  }
+}
+
+.process-description__second-decor {
+  position: absolute;
+  box-shadow: $spotShadow;
+  background: $spotBackgroundColor;
+  top: 517px;
+  right: -20px;
+  width: 74px;
+  height: 74px;
+  border-radius: 25px 0px;
+
+  @media screen and (max-width: 767px) {
+    transform: rotate(90deg);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 71px;
+    height: 74px;
+
+    top: 78px;
+    right: 0px;
+
+    border-radius: 25px 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 134px;
+    height: 144px;
+
+    top: -25px;
+    right: 12px;
+
+    border-radius: 72px 0px;
+  }
+}
+.process-description__third-decor {
+  position: absolute;
+  background-color: $spotBackgroundColor;
+  box-shadow: $spotShadow;
+  position: absolute;
+
+  width: 73.65px;
+  height: 73.65px;
+  left: -38px;
+  top: 592px;
+
+  border-radius: 0px 0px 0px 35px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 144px;
+    height: 116px;
+
+    bottom: -46px;
+    right: 143px;
+
+    border-radius: 0px 0px 0px 72px;
+  }
+}
+.process-description__fourth-decor {
+  position: absolute;
+  top: 78px;
+  right: -35px;
+
+  width: 74px;
+  height: 74px;
+
+  border-radius: 72px;
+  background-color: $spotBackgroundColor;
+  box-shadow: $spotShadow;
+
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+    width: 74px;
+    height: 71px;
+
+    right: 0px;
+    top: 643px;
+
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 978px;
+    right: 0px;
+
+    width: 143px;
+    height: 145px;
+
+    border-radius: 72px 0px;
+  }
+}
+
+.process-description__fifth-decor {
+  position: absolute;
+  box-shadow: $spotShadow;
+  border-radius: 25px 0px;
+  background-color: $spotBackgroundColor;
+
+  @media screen and (max-width: 767px) {
+    width: 74px;
+    height: 74px;
+
+    right: -34px;
+    top: 843px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+//? List
+
+.process-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
+
+  @media screen and (min-width: $tablet) {
+    gap: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 130px;
+
+    gap: 110px;
+  }
+}
+.process-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    gap: 32px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 85px;
+    flex-direction: row;
+
+    // justify-content: center;
+  }
+}
+.process-list__picture {
+  & img {
+    border-radius: 50px 0px;
+    box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.25));
+    width: 100%;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 336px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 235px;
+  }
+}
+
+.process-list__text {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 734px;
+  }
+}
+.process-list__text__paragraph {
+  color: $TextColor;
+  font-family: $fontCeraPro;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(23 / 18);
+  text-align: start;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 24px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
+.process-list__text__paragraph.mb0 {
+  margin-bottom: 0;
+}
+.process-list__text__paragraph--style {
+  font-family: $fontCeraPro, sans-serif;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(23 / 18);
+
+  text-transform: uppercase;
+  color: $accentColor;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
+.order-button {
+  display: block;
+  width: fit-content;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+
+  background-color: $buttonBackgroundColor;
+  color: $accentColor;
+
+  font-family: $fontCeraPro, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+
+  border-radius: 30.5px;
+  border: none;
+
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+
+  &:hover,
+  &:focus {
+    box-shadow: -5px -5px 5px #ffffff, 20px 20px 40px rgba(72, 121, 150, 0.1),
+      10px 10px 20px rgba(72, 121, 150, 0.25), -2px -2px 5px #ffffff;
+  }
+}
+.process-description__button {
+  margin-top: 24px;
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 56px;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
