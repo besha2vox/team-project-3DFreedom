@@ -1,17 +1,57 @@
+.order-page__container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding-left: 149px;
+  }
+}
+
+.order__form {
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
+}
+
 .form {
   margin-top: 28px;
+  padding-bottom: 60px;
+}
+
+.form__label {
+  min-width: 280px;
 }
 
 .form__input {
+  padding-bottom: 4px;
   border: none;
   border-bottom: 1px solid $accentColor;
-  min-width: 280px;
-  margin-bottom: 44px;
+  width: 100%;
   background-color: inherit;
+  margin-bottom: 44px;
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+  }
+}
+
+.custom-select {
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    display: inline-block;
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+    display: block;
+  }
 }
 
 .form__textarea {
-  min-width: 280px;
+  min-width: 100%;
   min-height: 199px;
   margin-top: 4px;
   resize: none;
@@ -22,12 +62,17 @@
 }
 
 textarea::placeholder {
-  color: $textareaColor;
+  color: #cdcdcd;
+}
+
+input::placeholder {
+  color: inherit;
 }
 
 .form__text--file {
-  color: $textareaColor;
+  color: #cdcdcd;
   margin-bottom: 40px;
+  max-width: 400px;
 }
 
 .input__file {
@@ -38,20 +83,39 @@ textarea::placeholder {
   position: absolute;
   z-index: -1;
 }
+.thumb {
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    display: inline-block;
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+  }
+}
 
 .thumb__textarea {
+  min-width: 280px;
   position: relative;
   margin-bottom: 4px;
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    display: inline-block;
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+  }
 }
 
 .form__label--file {
-  display: inline-block;
+  text-align: end;
   cursor: pointer;
   position: absolute;
   bottom: 23px;
-  right: 23.31px;
+  right: 21px;
 }
 
-.form__btn {
-  width: 280px;
+.icon-input-file {
+  fill: #cdcdcd;
 }
