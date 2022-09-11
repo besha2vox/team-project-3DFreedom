@@ -1,7 +1,9 @@
 .moz-thumb {
   display: none;
   @media screen and (min-width: $desktop) {
-    position: relative;
+    position: absolute;
+    right: 0;
+    bottom: 89px;
     margin-top: 68px;
     display: flex;
     flex-wrap: wrap;
