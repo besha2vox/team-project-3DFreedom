@@ -1,9 +1,11 @@
 .contact-page__container {
   padding: 50px 149px 80px;
 }
+
 .order-page__contacts {
   display: flex;
   flex-direction: column;
+  padding-bottom: 60px;
   row-gap: 24px;
   width: 100%;
   @media screen and (min-width: $tablet) {
@@ -11,6 +13,7 @@
   }
   @media screen and (min-width: $desktop) {
     flex-direction: column;
+    padding-bottom: 80px;
     row-gap: 30px;
     text-align: right;
   }

@@ -1,0 +1,63 @@
+<section class="order__form">
+  <h2 class="sub-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+  <form class="form">
+    <label for="name" class="form__label">
+      <input required type="text" name="name" id="name" placeholder="Ім’я" class="form__input" />
+    </label>
+    <label for="mail" class="form__label">
+      <input required type="email" name="mail" id="mail" placeholder="Email" class="form__input" />
+    </label>
+    <div class="custom-select">
+      <select>
+        <option value="0">Види пластика</option>
+        <option value="1">PLA</option>
+        <option value="2">ABS</option>
+        <option value="3">PVA</option>
+        <option value="4">Nylone</option>
+        <option value="5">HIPS</option>
+      </select>
+    </div>
+    <div class="custom-select">
+      <select>
+        <option value="0">Якість друку</option>
+        <option value="1">300 мікрон</option>
+        <option value="2">200 мікрон</option>
+        <option value="3">100 мікрон</option>
+        <option value="4">Труднощі у виборі - ми допоможемо</option>
+      </select>
+    </div>
+    <div class="custom-select">
+      <select>
+        <option value="0">Колір</option>
+        <option value="1">Білий</option>
+        <option value="2">Чорний</option>
+        <option value="3">Червоний</option>
+        <option value="4">Синій</option>
+        <option value="5">Жолтий</option>
+        <option value="6">Інший колір</option>
+      </select>
+    </div>
+    <div class="thumb">
+      <div class="thumb__textarea">
+        <label for="comment" class="form__label">Повідомлення
+          <textarea required placeholder="Залишіть своє повідомлення" class="form__textarea" name="comment"
+            id="comment"></textarea>
+        </label>
+        <label for="file" class="form__label--file">
+          <input required class="input__file" type="file" name="file" id="file" />
+          <svg class="icon-input-file" width="21" height="20">
+            <use href="/src/images/svg/sprite.svg#icon-input-file"></use>
+          </svg>
+        </label>
+      </div>
+      <p class="form__text--file">
+        *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+      </p>
+    </div>
+    <div>
+      <button class="order-button form__order-button" type="submit">ВІДПРАВИТИ</button>
+    </div>
+  </form>
+  <div class="order__spot1"></div>
+  <div class="order__spot2"></div>
+</section>
