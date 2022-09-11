@@ -1,33 +1,71 @@
 <body>
     <header class="page-header">
         <div class="mobile-container container">
+            <div class="page-header__rectangle--logo"></div>
+            <div class="page-header__rectangle--lang"></div>
             <a class="logo__link link" href="" class="logo">
                 <picture class="logo">
                     <source srcset="/src/images/bitmap/logo/browser-png/logo_101x25.png 101w, /src/images/bitmap/logo/browser-png/logo_101x25@2x.png 202w"
-                        media="(max-width: 767px)" sizes="(min-width: 101px) 101px, 20vw">
-                    <source srcset="/src/images/bitmap/logo/browser-png/logo_192x48.png 270w, /src/images/bitmap/logo/browser-png/logo_192x48.@2x.png 384w" 
-                        media="(min-width: 1440px)" sizes="(min-width: 192px) 192px, 20vw">
+                    media="(max-width: 767px)" sizes="(min-width: 101px) 101px, 20vw">
                     <source srcset="/src/images/bitmap/logo/browser-png/logo_125x31.png 125w, /src/images/bitmap/logo/browser-png/logo_125x31@2x.png 250w"
-                        media="(min-width: 768px)" sizes="(min-width: 125px) 125px, 20vw">
+                    media="(min-width: 768px)" sizes="(min-width: 125px) 125px, 20vw">
+                    <source srcset="/src/images/bitmap/logo/browser-png/logo_192x48.png 270w, /src/images/bitmap/logo/browser-png/logo_192x48.@2x.png 540w"
+                    media="(min-width: 1440px)" sizes="(min-width: 192px) 192px, 20vw">
                     <img src="/src/images/bitmap/logo/browser-png/logo_192x48.png" alt="Логотип компанії">
                 </picture>
             </a>
+            <div class="desktop-menu">
+                <nav class="desktop-menu__nav">
+                    <ul class="desktop-menu__list list">
+                        <li class="desktop-menu__item"><a class="desktop-menu__item--link link" href="./main-page/">Головна</a></li>
+                        <li class="desktop-menu__item desktop-menu--dropdown">
+                            <label class="desktop-menu--checkbox">Послуги
+                                <input type="checkbox" class="checkbox">
+                                <ul class="desktop-menu__service-list list">
+                                    <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link"
+                                            href="./modeling-page.html">3D Моделювання</a></li>
+                                    <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link" href="./scanning-page.html">3D
+                                            Сканування</a></li>
+                                    <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link"
+                                            href="./printing-page.html">3D Друк</a></li>
+                                </ul>
+                                <div class="desktop-menu--semicircle"></div>
+                            </label>
+                        </li>
+                        <li class="desktop-menu__item"><a class="desktop-menu__item--link link" href="./order-page.html">Замовити</a>
+                        </li>
+                        <li class="desktop-menu__item"><a class="desktop-menu__item--link link"
+                                href="./contacts-page.html">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div class="mobile-menu">
                 <button type="button" class="mobile-menu__toggle toggle-menu js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
-                    <svg class="mobile-menu__icons" aria-label="Переключатель мобільного меню" width="32">
-                        <use class="mobile-menu__icon-menu" href="/src/images/svg/sprite.svg#icon-mobile-menu"></use>
-                        <use class="mobile-menu__icon-cross" href="/src/images/svg/sprite.svg#icon-cross"></use>
+                    <svg class="mobile-menu__icons" aria-label="Переключатель мобільного меню">
+                        <use class="mobile-menu__icon-menu" width="32" height="32" href="/src/images/svg/sprite.svg#icon-mobile-menu"></use>
+                        <use class="mobile-menu__icon-cross" width="24" height="24" href="/src/images/svg/sprite.svg#icon-cross"></use>
                     </svg>
                 </button>
                 <div class="mobile-menu__container js-menu-container" id="mobile-menu">
                     <nav class="mobile-menu__nav">
                         <ul class="mobile-menu__list list">
                             <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="./main-page/">Головна</a></li>
-                            <li class="mobile-menu__item"><p class="mobile-menu__item--link link">Послуги</p>
-                                <ul class="mobile-menu__service-list list">
-                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" href="./modeling-page.html">3D Моделювання</a></li>
-                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" ="./scanning-page.html">3D Сканування</a></li>
-                                    <li class="mobile-menu__service-item"><a class="mobile-menu__service-item-link link" href="./printing-page.html">3D Друк</a></li>
+                            <li class="desktop-menu__item">
+                                <div class="desktop-menu--dropdrown">
+                                    <div class="mobile-menu__item--link desktop-menu__button">Послуги
+                                        <span class="desktop-menu--semicircle"></span>
+                                    </div>
+                                    <div class="desktop-menu__content">
+                                        <ul class="desktop-menu__service-list list">
+                                            <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link"
+                                                    href="./modeling-page.html">3D Моделювання</a></li>
+                                            <li class="desktop-menu__service-item"><a
+                                                    class="desktop-menu__service-item-link link"="./scanning-page.html">3D Сканування</a></li>
+                                            <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link"
+                                                    href="./printing-page.html">3D Друк</a></li>
+                                    </div>
+                                </div>
                             </li>
                             <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="./order-page.html">Замовити</a></li>
                             <li class="mobile-menu__item"><a class="mobile-menu__item--link link" href="./contacts-page.html">Контакти</a></li>
@@ -56,11 +94,11 @@
                         </ul>
                     </div>
                     <div class="mobile-contacts__not-dropdown">
-                        <ul class="mobile-contacts__list list">
-                            <li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="tel:+380936432288"
+                        <ul class="mobile-contacts__list--not-dropdown list">
+                            <li class="mobile-contacts__item--not-dropdown"><a class="mobile-contacts__link link" href="tel:+380936432288"
                                     class="mobile-contacts__link">+38 (093) 643 22 88</a>
                             </li>
-                            <li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="tel:+380503454423"
+                            <li class="mobile-contacts__item--not-dropdown"><a class="mobile-contacts__link link" href="tel:+380503454423"
                                     class="mobile-contacts__link">+38 (050) 345 44 23</a>
                             </li>
                         </ul>
@@ -77,9 +115,6 @@
                 </div>
             </div>
         </div>
-        <div class="page-header__rectangle--logo"></div>
-        <div class="page-header__rectangle--lang"></div>
-        <div class="page-header__rectangle--mobile-menu"></div>
     </header>
     <script src="/src/js/mobile-menu.js"></script>
 </body>

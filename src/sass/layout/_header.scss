@@ -6,32 +6,51 @@
 }
 
 .dropdown {    
-@media screen and (min-width: $mobile) {
+@media screen and (max-width: 767px) {
     display: flex;
     align-items: flex-end;
 }
 @media screen and (min-width: $tablet) {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row-reverse;
 }
 }
 
 // Лого
 
-.logo__link {
+.logo {
+    position: relative;
     z-index: 99;
-    @media screen and (min-width: $mobile) {
-        padding: 23px 0;
+@media screen and (max-width: 767px) {
+        width: 101px;
     }
 
-    @media screen and (min-width: $tablet) {
-        padding: 32px 0;
-        margin-right: 70px;
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
+        width: 125px;
     }
 
     @media screen and (min-width: $desktop) {
-        padding: 40px 0;
+        width: 192px;
+    }
+}
+
+.logo__link {
+    @media screen and (max-width: 767px) {
+        padding-top: 23px;
+        width: 101px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
+        padding-top: 32px;
+        margin-right: 111px;
+        width: 125px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 40px;
+        margin-right: 258px;
+        width: 192px;
     }
 }
 
@@ -44,27 +63,27 @@
 
 .mobile-menu__toggle {
     position: relative;
-    fill: $iconColor;
+    fill: $accentColor;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 99;
+    // z-index: 99;
     margin: 0;
-    width: 32px;
+    padding: 0;
     cursor: pointer;
     border: none;
     background-color: transparent;
     box-shadow: none;
     transition: box-shadow 250ms $cubicBezier;
-
-    @media screen and (min-width: $mobile) {
-        height: 18px;
+    @media screen and (max-width: 767px) {
+        padding-top: 23px;
     }
     @media screen and (min-width: $tablet) and (max-width: 1439px) {
-        height: 32px;
+        padding-top: 36px;
     }
     @media screen and (min-width: $desktop) {
         display: none;
+        appearance: none;
     }
 }
 
@@ -73,25 +92,33 @@
     box-shadow: $spotShadow;
 }
 
-.mobile-menu__icon-menu,
-.mobile-menu__icons  {
+.mobile-menu__toggle .mobile-menu__icons {
     width: 32px;
-    @media screen and (max-width: 767px) {
-        height: 18px;
-    }
-    @media screen and (min-width: $tablet) and (max-width: 1439px) {
-        height: 32px;
-    }
+    height: 32px;
+}
+
+.mobile-menu__toggle.is-open .mobile-menu__icons {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-menu__icon-menu  {
+    width: 32px;
+    height: 32px; 
 }
 
 .mobile-menu__icon-cross {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
 }
 
 
 .mobile-menu__toggle .mobile-menu__icon-cross {
     display: none;
+}
+
+.mobile-menu__toggle .mobile-menu__icon-menu {
+    display: block;
 }
 
 .mobile-menu__toggle.is-open .mobile-menu__icon-menu {
@@ -104,23 +131,29 @@
 
 .mobile-menu__container {
     position: absolute;
-    top: 300%;
-    left: 2%;
-    width: 100vw;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     height: 100vh;
-    z-index: 99;
-    background-color: rgba(229, 229, 229, 0);
+    background-color: rgba(255, 255, 255, 0);
     opacity: 0;
     transition: opacity 250ms $cubicBezier, background-color 250ms $cubicBezier;
     visibility: hidden;
     pointer-events: none;
+    @media screen and (max-width: 767px) {
+        width: 100vw;
+    }
+    @media screen and (min-width: $tablet) {
+        width: 380px;
+    }
 }
 
 .mobile-menu__container.is-open {
-    background-color: rgba(229, 229, 229, 1);
+    background-color: rgba(255, 255, 255, 1);
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
+    z-index: 99;
     @media screen and (min-width: $desktop) {
         display: none;
     }
@@ -140,12 +173,17 @@
 }
 
 .mobile-menu__list {
-    width: 100%;
+    @media screen and (max-width: 1439px) {
+        width: 100%;
+        padding: 38px 20px 102px 10px;
+    }
 }
 
 .mobile-menu__service-list {
     width: 100%;
+@media screen and (max-width: 1439px) {
     margin-top: 24px;
+}
 }
 
 .mobile-menu__service-item-link {
@@ -191,10 +229,108 @@
     margin-bottom: 5px;
 }
 
+// Десктопне меню
+
+.desktop-menu__list {
+    @media screen and (max-width: 1439px) {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        padding-top: 54px;
+    }
+}
+
+.desktop-menu__item:not(:last-child) {
+    margin-right: 56px;
+}
+
+.desktop-menu__item--link {
+    font-family: $fontCaviarDreams;
+    font-size: 18px;
+    line-height: 1.16px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: $TextColor;
+}
+
+.desktop-menu__service-item {
+    margin-top: 4px;
+}
+
+.desktop-menu__service-item-link {
+    font-family: $fontCaviarDreams;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: $TextColor;
+    display: block;
+}
+
+// Додаткове меню
+
+.desktop-menu--checkbox {
+    cursor: pointer;
+}
+
+.desktop-menu--checkbox::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 4px;
+    margin-left: 2px;
+    fill: $iconColor;
+    background-image: url("/src/images/svg/icons-svg/services-arrow.svg");
+    background-color: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.desktop-menu__service-list {
+    display: none;
+    text-align: center;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked~.desktop-menu__service-list,
+.checkbox:checked~.desktop-menu--semicircle {
+    display: block;
+}
+
+.desktop-menu__button {
+    width: 10px;
+    height: 4px;
+}
+
+.desktop-menu--semicircle {
+    display: none;
+    width: 114px;
+    height: 144px;
+    border-radius: 80px 0px 0px 80px;
+    box-shadow: $spotShadow;
+    transform: rotate(-90deg);
+    background-color: $spotBackgroundColor;
+    position: absolute;
+    top: -25px;
+    left: -24px;
+}
+
+.desktop-menu__service-item .desktop-menu__service-item-link:hover,
+.desktop-menu__service-item .desktop-menu__service-item-link:focus {
+    color: $accentColor;
+}
+
 // Контакти
 
 .mobile-contacts__button {
-    z-index: 99;
+    // z-index: 99;
     position: relative;
     @media screen and (min-width: $tablet) {
         display: none;
@@ -204,12 +340,18 @@
 .mobile-contacts__dropdown {
     position: relative;
     display: inline-block;
-    
+
     @media screen and (max-width: 767px) {
-        margin-right: 27px;
+        padding-top: 23px;
+        margin-left: 25px;
     }
     @media screen and (min-width: $tablet) {
         margin-left: 38px;
+        padding-top: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-top: 40px;
+        margin-left: 118px;
     }
 }
 
@@ -223,7 +365,7 @@
     width: 162px; 
     height: 82px;
     padding: 16px 6px 16px 8px;
-    z-index: 99;
+    // z-index: 99;
     border-radius: 2px;
     transition: opacity 250ms $cubicBezier;
 }
@@ -235,33 +377,41 @@
 
     @media screen and (min-width: $tablet) {
         display: block;
+        position: relative;
+        // z-index: 10;
     }
 }
 
 .mobile-contacts--background-triangle {
     display: none;
     position: absolute;
-    top: 60%;
+    top: 95%;
     left: -5px;
     fill: $spotBackgroundColor;
-    z-index: 99;
+    // z-index: 99;
     opacity: 0;
     transition: opacity 250ms $cubicBezier;
 }
 
-// .mobile-contacts__item:not(:last-child) {
-//     margin-bottom: 10px;
-// }
+.mobile-contacts__item:not(:last-child),
+.mobile-contacts__item--not-dropdown:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.mobile-contacts__item--not-dropdown {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+    }       
+}
 
 .mobile-contacts__link {
     width: 100%;
     color: $TextColor;
-    padding: 2px;
     text-decoration: none;
     display: block;
     font-family: $fontCeraPro;
     line-height: 1.26;
-    letter-spacing: 1%;
     transition: color 250ms $cubicBezier;
 
     @media screen and (min-width: $tablet) {
@@ -296,6 +446,21 @@
     }
 }
 
+.mobile-contacts__item--not-dropdown::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    fill: $iconColor;
+    background-image: url("/src/images/svg/icons-svg/phone.svg");
+    background-color: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 .menu-lang__dropdowncontent {
     cursor: pointer;
 }
@@ -308,26 +473,46 @@
     font-weight: 700px;
     font-size: 16px;
     line-height: 1.27;
-    letter-spacing: 1%;
+    border-radius: 2px;
     cursor: pointer;
+    @media screen and (max-width: 767px) {
+        margin-left: 27px;
+    }
 }
 
 .menu-lang__dropdowncontent {
     position: relative;
     display: inline-block;
-    z-index: 10;
+    // z-index: 10;
+    @media screen and (max-width: 767px) {
+        padding-top: 23px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
+        padding-top: 28px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-top: 40px;
+    }
 }
 
 .menu-lang__content {
     display: none;
     position: absolute;
-    top: 50px;
-    left: -10px;
     text-align: center;
     background-color: $spotBackgroundColor;
     width: 55px;
     opacity: 0;
     transition: opacity 250ms $cubicBezier;
+@media screen and (max-width: 767px) {
+    top: 100%;
+    left: 0%;
+    transform: translate(25%, 0);
+}
+@media screen and (min-width: $tablet) {
+    top: 100%;
+    left: -30%;
+    transform: translate(0, 0);
+}
 }
 
 .menu-lang__link {
@@ -340,7 +525,6 @@
     font-weight: 700px;
     font-size: 16px;
     line-height: 1.27;
-    letter-spacing: 1%;
     transition: color 250ms $cubicBezier;
 }
 
@@ -357,41 +541,65 @@
 
 .page-header__rectangle--logo {
     display: block;
-    position: fixed;
-    width: 73.65px;
-    height: 73.65px;
-    top: 0;
-    left: 0;
+    position: absolute;
     background-color: $spotBackgroundColor;
     box-shadow: $spotShadow;
-    border-radius: 35px 0px 0px 35px;
     transform: rotate(180deg);
-    z-index: 9;
+    // z-index: 9;
+    @media screen and (max-width: 767px) {
+        width: 73.65px;
+        height: 73.65px;
+        top: 0;
+        left: 0;
+        border-radius: 35px 0px 0px 35px; 
+        transform: rotate(-180deg) translateX(0) translateY(0);
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
+        border-radius: 35px 0px 0px 35px;
+        width: 73.65px;
+        height: 73.65px;
+        top: 0;
+        left: 29%;
+        transform: rotate(-180deg) translateX(0) translateY(0);
+    }
+    @media screen and (min-width: $desktop) {
+        width: 144.18px;
+        height: 144.29px;
+        top: 0;
+        left: 0;
+        border-radius: 0px 72px 72px 0px;
+        transform: translateX(180%) translateY(0);
+    }
 }
 
 .page-header__rectangle--lang {
     display: block;
-    position: fixed;
-    width: 73.65px;
-    height: 73.65px;
-    top: 0;
-    left: 65%;
-    transform: translate(100%, 0);
+    position: absolute;
     background-color: $spotBackgroundColor;
     box-shadow: $spotShadow;
-    border-radius: 35px 0px 0px 35px;
-    z-index: 9;
-}
-
-.page-header__rectangle--mobile-menu {
-    display: block;
-    position: fixed;
-    width: 73.65px;
-    height: 73.65px;
-    top: 295px;
-    left: 0;
-    background-color: $spotBackgroundColor;
-    box-shadow: $spotShadow;
-    border-radius: 0px 0px 35px 0px;
-    z-index: 89;
+    // z-index: 9;
+    @media screen and (max-width: 767px) {
+        border-radius: 35px 0px 0px 35px;
+        width: 73.65px;
+        height: 73.65px;
+        top: 0;
+        left: 73%;
+        transform: translate(100%, 0);
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1439px) {
+        border-radius: 35px 0px 0px 35px;
+        width: 73.65px;
+        height: 73.65px;
+        top: 0;
+        left: 53%;
+        transform: translate(100%, 0);
+    }
+    @media screen and (min-width: $desktop) {
+        border-radius: 72px 0px 0px 72px;
+        width: 144.18px;
+        height: 144.29px;
+        top: 0;
+        left: 62%;
+        transform: translate(100%, 0);
+    }
 }
