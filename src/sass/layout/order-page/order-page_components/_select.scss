@@ -5,6 +5,13 @@
   position: relative;
   width: 100%;
   border-bottom: 1px solid rgba(72, 121, 150, 0.5);
+  margin-bottom: 44px;
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+  }
 }
 .custom-select select {
   display: none; /*hide original SELECT element:*/
@@ -29,7 +36,7 @@
 .select-items div,
 .select-selected {
   color: $TextColor;
-  padding: 8px 16px;
+  padding: 4px 2px;
   cursor: pointer;
 }
 .select-selected.select-arrow-active {
