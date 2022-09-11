@@ -1,0 +1,95 @@
+.moz-thumb {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    margin-top: 68px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 437px;
+    height: 293px;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.moz-thumb_img {
+  width: 139px;
+  height: 139px;
+}
+
+.moz-1 {
+  border-radius: 0px 72px 0px 0px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-repeat: no-repeat;
+  background-size: 438px 294px;
+  background-position: left top;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .moz-1,
+  .moz-2,
+  .moz-3,
+  .moz-4,
+  .moz-5,
+  .moz-6 {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+
+.moz-2 {
+  position: absolute;
+  top: 11px;
+  left: 151px;
+  border-radius: 0px 0px 0px 72px;
+  background-repeat: no-repeat;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: 50% 0;
+  background-size: 438px 294px;
+}
+
+.moz-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 72px 0px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 438px 294px;
+}
+
+.moz-4 {
+  position: absolute;
+  left: 2px;
+  bottom: 6px;
+  border-radius: 0px 72px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: 2% 97%;
+  background-repeat: no-repeat;
+  background-size: 438px 294px;
+}
+
+.moz-5 {
+  position: absolute;
+  bottom: 0;
+  left: 144px;
+  border-radius: 72px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 438px 294px;
+}
+
+.moz-6 {
+  position: absolute;
+  bottom: 4px;
+  right: 8px;
+  border-radius: 0px 0px 72px 0px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: 96% 96%;
+  background-repeat: no-repeat;
+  background-size: 438px 294px;
+}
