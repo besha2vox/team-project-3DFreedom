@@ -4,12 +4,10 @@
 .custom-select {
   position: relative;
   width: 100%;
-  border-bottom: 1px solid #487996;
+  border-bottom: 1px solid rgba(72, 121, 150, 0.5);
 }
 .custom-select select {
   display: none; /*hide original SELECT element:*/
-}
-.select-selected {
 }
 /*style the arrow inside the select element:*/
 .select-selected:after {
@@ -32,8 +30,14 @@
 .select-selected {
   color: $TextColor;
   padding: 8px 16px;
-  border: 1px solid transparent;
   cursor: pointer;
+}
+.select-selected.select-arrow-active {
+  border-bottom: 1px solid rgba(72, 121, 150, 0.5);
+}
+
+.select-selected {
+  border-bottom: 1px solid #487996;
 }
 /*style items (options):*/
 .select-items {
@@ -42,6 +46,18 @@
   left: 0;
   right: 0;
   z-index: 99;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  row-gap: 4px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 10px;
+    row-gap: 6px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 12px;
+    gap: 8px;
+  }
 }
 /*hide the items when the select box is closed:*/
 .select-hide {
@@ -50,4 +66,5 @@
 .select-items div:hover,
 .same-as-selected {
   background-color: rgba(72, 121, 150, 0.5);
+  color: #ffffff;
 }
