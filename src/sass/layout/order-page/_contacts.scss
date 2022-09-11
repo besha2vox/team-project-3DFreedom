@@ -1,12 +1,13 @@
 .moz-thumb {
   display: none;
   @media screen and (min-width: $desktop) {
+    position: relative;
     margin-top: 68px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 438px;
-    height: 294px;
+    width: 437px;
+    height: 293px;
     filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
   }
 }
@@ -39,9 +40,9 @@
 }
 
 .moz-2 {
-  position: relative;
-  top: 5px;
-  left: 2px;
+  position: absolute;
+  top: 11px;
+  left: 151px;
   border-radius: 0px 0px 0px 72px;
   background-repeat: no-repeat;
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
@@ -50,6 +51,9 @@
 }
 
 .moz-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
   border-radius: 72px 0px;
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
   background-position: right top;
@@ -58,6 +62,9 @@
 }
 
 .moz-4 {
+  position: absolute;
+  left: 2px;
+  bottom: 6px;
   border-radius: 0px 72px;
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
   background-position: 2% 97%;
@@ -66,9 +73,9 @@
 }
 
 .moz-5 {
-  position: relative;
-  top: 7px;
-  right: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 144px;
   border-radius: 72px;
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
   background-position: 50% 100%;
@@ -77,8 +84,8 @@
 }
 
 .moz-6 {
-  position: relative;
-  bottom: 2px;
+  position: absolute;
+  bottom: 4px;
   right: 8px;
   border-radius: 0px 0px 72px 0px;
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
