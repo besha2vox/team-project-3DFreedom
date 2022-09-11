@@ -1,4 +1,5 @@
 .create-model-container {
+  position: relative;
   width: 320px;
   padding: 0 20px;
   @media screen and (min-width: $tablet) {
@@ -9,6 +10,37 @@
     width: $desktop;
     padding: 0 32px;
   }
+}
+
+.decor {
+  width: 73.65px;
+  height: 73.65px;
+  z-index: -1;
+  background: #ffffff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+}
+
+.decor__top-left {
+  position: absolute;
+  left: -18px;
+  top: 45px;
+  border-radius: 0px 0px 0px 35px;
+}
+
+.decor__top-right {
+  position: absolute;
+  left: 267px;
+  top: 9px;
+  border-radius: 25px 0px;
+  transform: rotate(90deg);
+  mix-blend-mode: normal;
+}
+
+.decor__bottom-right {
+  position: absolute;
+  left: 261px;
+  top: 327px;
+  border-radius: 25px 0px;
 }
 
 .create-model-title {
@@ -46,18 +78,32 @@
     min-width: 152px;
   }
   @media screen and (min-width: $desktop) {
-    width: 100%;
+    min-width: 320px;
   }
 }
 
-.create-model-list__card {
+.create-model-rad-left {
   border-radius: 0px 0px 0px 50px;
 }
 
-.create-model__btn {
-  display: flex;
+.create-model-rad-right {
+  border-radius: 50px 0px 57px;
+}
+
+.order-button {
+  display: block;
   margin: 0 auto;
-  margin-bottom: 60px;
+  align-items: center;
+  width: 277px;
+  height: 56px;
+  padding: 16px 32px;
+  background: #f5f5fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: $desktop) {
     margin-bottom: 80px;
   }
