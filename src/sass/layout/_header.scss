@@ -84,7 +84,6 @@
     }
     @media screen and (min-width: $desktop) {
         display: none;
-        appearance: none;
     }
 }
 
@@ -132,20 +131,22 @@
 
 .mobile-menu__container {
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
     height: 100vh;
     background-color: rgba(255, 255, 255, 0);
     opacity: 0;
     transition: opacity 250ms $cubicBezier, background-color 250ms $cubicBezier;
     visibility: hidden;
     pointer-events: none;
+
     @media screen and (max-width: 767px) {
         width: 100vw;
+        transform: translateX(-48%);
     }
     @media screen and (min-width: $tablet) {
         width: 380px;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -276,12 +277,25 @@
 
 // Додаткове меню
 
-.desktop-menu--checkbox {
-    cursor: pointer;
+.desktop-menu__service-list {
+    display: none;
+    text-align: center;
     position: relative;
 }
 
-.desktop-menu--checkbox::before {
+.desktop-menu--click:focus~.desktop-menu__service-list,
+.desktop-menu--click:active~.desktop-menu__service-list,
+.desktop-menu__service-list:hover {
+    display: block;
+        position: absolute;
+        top: 20px;
+        width: 155px;
+        left: -42px;
+}
+
+
+
+.desktop-menu--click::before {
     content: "";
     display: inline-block;
     width: 10px;
@@ -299,25 +313,8 @@
     transform: translate(0%, 0%);
 }
 
-.desktop-menu__service-list {
-    display: none;
-    text-align: center;
-    position: relative;
-}
 
-.checkbox {
-    display: none;
-}
-
-.checkbox:checked~.desktop-menu__service-list {
-    display: block;
-    position: absolute;
-    top: 20px;
-    width: 155px;
-    left: -42px;
-}
-
-.checkbox:checked~.desktop-menu__service-list::after {
+.desktop-menu--click:focus~.desktop-menu__service-list::after {
     content: "";
     display: block;
     width: 120px;
