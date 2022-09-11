@@ -1,4 +1,5 @@
 .order-page__container {
+  position: relative;
   @media screen and (min-width: $desktop) {
     display: flex;
     padding-left: 149px;
@@ -7,6 +8,9 @@
 
 .order__form {
   @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
   @media screen and (min-width: $desktop) {
@@ -17,10 +21,19 @@
 .form {
   margin-top: 28px;
   padding-bottom: 60px;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+  }
 }
 
 .form__label {
+  display: block;
   min-width: 280px;
+  margin-bottom: 44px;
 }
 
 .form__input {
@@ -29,7 +42,6 @@
   border-bottom: 1px solid $accentColor;
   width: 100%;
   background-color: inherit;
-  margin-bottom: 44px;
   @media screen and (min-width: $tablet) {
     width: 400px;
   }
@@ -106,6 +118,9 @@ input::placeholder {
   @media screen and (min-width: $desktop) {
     width: 555px;
   }
+  .form__label {
+    margin: 0;
+  }
 }
 
 .form__label--file {
@@ -118,4 +133,56 @@ input::placeholder {
 
 .icon-input-file {
   fill: #cdcdcd;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+}
+
+.form__order-button {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $tablet) {
+    margin-right: 0;
+  }
+}
+
+.order__spot1 {
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    right: 0;
+    top: 102px;
+    width: 71.41px;
+    height: 74.08px;
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 25px 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 136.83px;
+    height: 144px;
+    left: -21.82px;
+    top: 44px;
+
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 72px;
+  }
+}
+
+.order__spot2 {
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    width: 74.08px;
+    height: 71.41px;
+    right: 0;
+    bottom: 272px;
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
