@@ -7,6 +7,7 @@
 @import './utils/basics'; // Базові налаштування стилей
 @import './utils/container'; // Базові налаштування стилей
 @import './utils/components'; // Базові налаштування стилей
+@import './utils/animation'; // Анімації
 
 //* Layout Styles
 @import './layout/header'; // ХЕДЕР
@@ -15,5 +16,6 @@
 @import './layout/scanning-page.scss'; // 3D СКАНУВАННЯ
 @import './layout/printing-page.scss'; // МИ СТВОРЮЄМО
 @import './layout/order-page.scss'; // ЗРОБИТИ ЗАМОВЛЕННЯ
+@import './layout/order-page/order-page_components/select'; // ЗРОБИТИ ЗАМОВЛЕННЯ SELECT
 @import './layout/contacts-page.scss'; // КОНТАКТИ
 @import './layout/footer'; // ФУТЕР

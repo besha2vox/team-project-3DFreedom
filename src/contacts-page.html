@@ -13,9 +13,13 @@
 
 <body>
     <include src="./partials/page-header.html"></include>
-    <include src="./partials/contacts-page/hero.html"></include>
-    <include src="./partials/contacts-page/contacts.html"></include>
-    <include src="./partials/contacts-page/contact-form.html"></include>
+    <main>
+        <include src="./partials/contacts-page/hero.html"></include>
+        <div class="container contacts-page__container">
+            <include src="./partials/contacts-page/contacts.html"></include>
+            <include src="./partials/contacts-page/contact-form.html"></include>
+        </div>
+    </main>
     <include src="./partials/page-footer.html"></include>
 </body>
 
