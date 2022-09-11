@@ -40,11 +40,11 @@
     <div class="thumb">
       <div class="thumb__textarea">
         <label for="comment" class="form__label">Повідомлення
-          <textarea placeholder="Залишіть своє повідомлення" class="form__textarea" name="comment"
+          <textarea required placeholder="Залишіть своє повідомлення" class="form__textarea" name="comment"
             id="comment"></textarea>
         </label>
         <label for="file" class="form__label--file">
-          <input class="input__file" type="file" name="file" id="file" />
+          <input required class="input__file" type="file" name="file" id="file" />
           <svg class="icon-input-file" width="21" height="20">
             <use href="/src/images/svg/sprite.svg#icon-input-file"></use>
           </svg>
@@ -55,8 +55,9 @@
       </p>
     </div>
     <div>
-      <button class="order-button" type="submit">ВІДПРАВИТИ</button>
+      <button class="order-button form__order-button" type="submit">ВІДПРАВИТИ</button>
     </div>
   </form>
-  <div class="contacts_spot"></div>
+  <div class="order__spot1"></div>
+  <div class="order__spot2"></div>
 </section>
