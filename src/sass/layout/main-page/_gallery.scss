@@ -1,0 +1,179 @@
+.gallery {
+  padding-top: 20px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 60px;
+  }
+}
+
+.gallery__container {
+  position: relative;
+  padding: 0 20px;
+  @media screen and (min-width: $tablet) {
+    padding: 0 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0 149px;
+  }
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 24px;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    gap: 32px;
+    margin-top: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 62px;
+  }
+}
+
+.gallery__item {
+  width: 100%;
+  cursor: pointer;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+.gallery__title {
+  margin-top: 8px;
+  font-family: 'Cera Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: $accentColor;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.gallery-decoration__leftup {
+  z-index: -1;
+  position: absolute;
+  width: 73.65px;
+  height: 73.65px;
+  left: -29px;
+  top: -45px;
+  box-shadow: $spotShadow;
+  border-radius: 0px 0px 35px 0px;
+  background: $spotBackgroundColor;
+  @media screen and (min-width: $tablet) {
+    width: 73.65px;
+    height: 74.05px;
+    left: 32px;
+    top: -35px;
+    box-shadow: $spotShadow;
+    border-radius: 0px 0px 35px 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 110.23px;
+    height: 144px;
+    left: 29.85px;
+    top: 15px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+
+.gallery-decoration__leftdown {
+  position: absolute;
+  z-index: -1;
+  background: $spotBackgroundColor;
+  width: 73.65px;
+  height: 73.65px;
+  left: -17px;
+  top: 307px;
+  box-shadow: $spotShadow;
+  border-radius: 25px 0px;
+  @media screen and (min-width: $tablet) {
+    width: 73.65px;
+    height: 74.05px;
+    left: 32px;
+    top: 165px;
+    box-shadow: $spotShadow;
+    border-radius: 25px 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 140.9px;
+    height: 161px;
+    left: 29.85px;
+    top: 390px;
+    border-radius: 72px 0px;
+  }
+}
+
+.gallery-decoration__rightup {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    box-shadow: $spotShadow;
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+    background: $spotBackgroundColor;
+    width: 73px;
+    height: 74.05px;
+    left: 663px;
+    top: 25px;
+    border-radius: 0px 0px 0px 35px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 142.81px;
+    height: 144px;
+    left: 1265.34px;
+    top: 177px;
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(-180deg);
+  }
+}
+
+.gallery-decoration__rightdown {
+  z-index: -1;
+  position: absolute;
+  display: block;
+  width: 73.65px;
+  height: 73.65px;
+  right: -30px;
+  top: 250px;
+  box-shadow: $spotShadow;
+  border-radius: 72px;
+  background: $spotBackgroundColor;
+  @media screen and (min-width: $tablet) {
+    width: 73.65px;
+    height: 74.05px;
+    left: 711.35px;
+    top: 110px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 144.18px;
+    height: 144.29px;
+    left: 1359.82px;
+    top: 325px;
+    transform: rotate(-180deg);
+  }
+}
+
+.gallery-decoration__tank {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    left: 1264px;
+    top: 640px;
+    overflow: hidden;
+    background: $spotBackgroundColor;
+    border-radius: 72px;
+  }
+}
