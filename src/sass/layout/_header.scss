@@ -163,6 +163,20 @@
   }
 }
 
+.mobile-menu__container.is-open > .page-header__rectangle--mobile {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    z-index: 99;
+    width: 73.65px;
+    height: 73.65px;
+    left: -29px;
+    top: 294.61px;
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 0px 0px 35px 0px;
+  }
+}
+
 .mobile-menu__item {
   width: 100%;
   margin-bottom: 24px;
