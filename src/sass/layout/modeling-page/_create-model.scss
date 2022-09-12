@@ -1,0 +1,125 @@
+.create-model-container {
+  position: relative;
+  padding: 0 20px;
+  @media screen and (min-width: $tablet) {
+    padding: 0 32px;
+  }
+}
+
+.create-decor {
+  width: 73.65px;
+  height: 73.65px;
+  z-index: -1;
+  background: #ffffff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+}
+
+.decor__top-left {
+  position: absolute;
+  left: -18px;
+  top: 37px;
+  border-radius: 0px 0px 0px 35px;
+  @media screen and (min-width: $tablet) {
+    top: -9999px;
+    left: -9999px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 136.83px;
+    height: 144px;
+    left: -21.82px;
+    top: -38px;
+    border-radius: 72px;
+  }
+}
+
+.decor__top-right {
+  position: absolute;
+  right: 21px;
+  top: 1px;
+  border-radius: 25px 0px;
+  transform: rotate(90deg);
+  mix-blend-mode: normal;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.decor__bottom-right {
+  position: absolute;
+  right: -15px;
+  bottom: 22px;
+  border-radius: 25px 0px;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.create-model-title {
+  margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    max-width: 648px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 842px;
+    margin-bottom: 40px;
+    padding-left: 117px;
+  }
+}
+
+.create-model-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px 20px;
+  margin-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 80px;
+  }
+}
+
+.create-model-list__item {
+  @media screen and (max-width: 767px) {
+    min-width: calc((100% - 20px) / 2);
+  }
+  @media screen and (min-width: $tablet) {
+    min-width: calc((100% - 32px * 3) / 4);
+  }
+}
+
+.create-model-rad-left {
+  border-radius: 0px 0px 0px 50px;
+}
+
+.create-model-rad-right {
+  border-radius: 50px 0px 57px;
+}
+
+.order-button {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  width: 277px;
+  height: 56px;
+  padding: 16px 32px;
+  background: #f5f5fa;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
+    5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
+  border-radius: 30.5px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 80px;
+  }
+}
