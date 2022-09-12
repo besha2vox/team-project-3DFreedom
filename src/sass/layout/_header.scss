@@ -205,8 +205,8 @@
 
 .mobile-menu__item--link:hover,
 .mobile-menu__item--link:focus,
-.mobile-menu__service-item:hover,
-.mobile-menu__service-item:focus {
+.mobile-menu__service-item-link:hover,
+.mobile-menu__service-item-link:focus {
   color: $spotBackgroundColor;
   text-shadow: $accentColor 1px 1px 0, $accentColor -1px -1px 0,
     $accentColor -1px 1px 0, $accentColor 1px -1px 0;
