@@ -156,7 +156,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  z-index: 99;
+  z-index: 8;
   top: 73px;
   @media screen and (min-width: $desktop) {
     display: none;
@@ -630,4 +630,27 @@
     left: 62%;
     transform: translate(100%, 0);
   }
+}
+
+.page-header__rectangle--mobile {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    z-index: 10;
+    width: 73.65px;
+    height: 73.65px;
+    left: -29px;
+    top: 294.61px;
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 0px 0px 35px 0px;
+  }
+}
+
+.page-header__rectangle--logo,
+.page-header__rectangle--lang {
+  z-index: 10;
+}
+
+.menu-lang__dropdowncontent {
+  z-index: 100;
 }
