@@ -1,13 +1,7 @@
 .create-model-container {
   position: relative;
-  width: 320px;
   padding: 0 20px;
   @media screen and (min-width: $tablet) {
-    width: $tablet;
-    padding: 0 32px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
     padding: 0 32px;
   }
 }
@@ -23,7 +17,7 @@
 .decor__top-left {
   position: absolute;
   left: -18px;
-  top: 45px;
+  top: 37px;
   border-radius: 0px 0px 0px 35px;
   @media screen and (min-width: $tablet) {
     top: -9999px;
@@ -40,8 +34,8 @@
 
 .decor__top-right {
   position: absolute;
-  left: 267px;
-  top: 9px;
+  right: 21px;
+  top: 1px;
   border-radius: 25px 0px;
   transform: rotate(90deg);
   mix-blend-mode: normal;
@@ -55,8 +49,8 @@
 
 .decor__bottom-right {
   position: absolute;
-  left: 261px;
-  top: 327px;
+  right: -15px;
+  bottom: 22px;
   border-radius: 25px 0px;
   @media screen and (min-width: $tablet) {
     display: none;
@@ -95,14 +89,11 @@
 }
 
 .create-model-list__item {
-  @media screen and (max-width: $mobile) {
-    min-width: 130px;
+  @media screen and (max-width: 767px) {
+    min-width: calc((100% - 20px) / 2);
   }
   @media screen and (min-width: $tablet) {
-    min-width: 152px;
-  }
-  @media screen and (min-width: $desktop) {
-    min-width: 320px;
+    min-width: calc((100% - 32px * 3) / 4);
   }
 }
 
