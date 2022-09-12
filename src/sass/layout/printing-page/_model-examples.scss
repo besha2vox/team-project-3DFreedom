@@ -1,5 +1,13 @@
 .model {
-  padding-top: 18px;
+  @media screen and (max-width: 767px) {
+    padding-top: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 34px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 100px;
+  }
 }
 
 .container__changes {
