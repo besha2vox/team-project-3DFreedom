@@ -373,9 +373,10 @@
   width: 162px;
   height: 82px;
   padding: 16px 6px 16px 8px;
-  // z-index: 99;
+  z-index: 99;
   border-radius: 2px;
   transition: opacity 250ms $cubicBezier;
+  box-shadow: $spotShadow;
 }
 
 .mobile-contacts__not-dropdown {
@@ -396,7 +397,7 @@
   top: 95%;
   left: -5px;
   fill: $spotBackgroundColor;
-  // z-index: 99;
+  z-index: 100;
   opacity: 0;
   transition: opacity 250ms $cubicBezier;
 }
@@ -507,6 +508,7 @@
 .menu-lang__content {
   display: none;
   position: absolute;
+  z-index: 99;
   text-align: center;
   background-color: $spotBackgroundColor;
   width: 55px;
