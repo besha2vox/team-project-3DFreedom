@@ -1,0 +1,188 @@
+.order-page__container {
+  position: relative;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding-left: 149px;
+  }
+}
+
+.order__form {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
+}
+
+.form {
+  margin-top: 28px;
+  padding-bottom: 60px;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+  }
+}
+
+.form__label {
+  display: block;
+  min-width: 280px;
+  margin-bottom: 44px;
+}
+
+.form__input {
+  padding-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid $accentColor;
+  width: 100%;
+  background-color: inherit;
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+  }
+}
+
+.custom-select {
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    display: inline-block;
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+    display: block;
+  }
+}
+
+.form__textarea {
+  min-width: 100%;
+  min-height: 199px;
+  margin-top: 4px;
+  resize: none;
+  border: none;
+  border: 1px solid $accentColor;
+  border-radius: 50px 0px;
+  padding: 22px 0 0 20px;
+}
+
+textarea::placeholder {
+  color: #cdcdcd;
+}
+
+input::placeholder {
+  color: inherit;
+}
+
+.form__text--file {
+  color: #cdcdcd;
+  margin-bottom: 40px;
+  max-width: 400px;
+}
+
+.input__file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.thumb {
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    display: inline-block;
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+  }
+}
+
+.thumb__textarea {
+  min-width: 280px;
+  position: relative;
+  margin-bottom: 4px;
+  @media screen and (min-width: $tablet) {
+    width: 400px;
+    display: inline-block;
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 555px;
+  }
+  .form__label {
+    margin: 0;
+  }
+}
+
+.form__label--file {
+  text-align: end;
+  cursor: pointer;
+  position: absolute;
+  bottom: 23px;
+  right: 21px;
+}
+
+.icon-input-file {
+  fill: #cdcdcd;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+}
+
+.form__order-button {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $tablet) {
+    margin-right: 0;
+  }
+}
+
+.order__spot1 {
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    right: 0;
+    top: 102px;
+    width: 71.41px;
+    height: 74.08px;
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 25px 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 136.83px;
+    height: 144px;
+    left: -21.82px;
+    top: 44px;
+
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 72px;
+  }
+}
+
+.order__spot2 {
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    width: 74.08px;
+    height: 71.41px;
+    right: 0;
+    bottom: 272px;
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}

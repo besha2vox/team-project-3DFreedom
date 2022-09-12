@@ -1,11 +1,4 @@
-.model__container {
-  @media screen and (min-width: 1440px) {
-    padding-left: 149px;
-    padding-right: 149px;
-  }
-}
-.model__sec-container {
-  position: relative;
+.model {
   @media screen and (max-width: 767px) {
     padding-top: 18.35px;
     padding-bottom: 40px;
@@ -18,6 +11,16 @@
     padding-top: 45.7px;
     padding-bottom: 40px;
   }
+}
+
+.model__container {
+  @media screen and (min-width: 1440px) {
+    padding-left: 149px;
+    padding-right: 149px;
+  }
+}
+.model__sec-container {
+  position: relative;
 }
 .model__f-container {
   position: relative;

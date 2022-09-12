@@ -1,0 +1,139 @@
+.order-page {
+  padding-top: 18px;
+  padding-bottom: 40px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 45px 0 100px;
+  }
+}
+
+.order-page__hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    align-items: flex-start;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 149px;
+  }
+}
+
+.order-page__img {
+  border-radius: 15px;
+}
+
+.order-page__content {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: $desktop) {
+    align-items: stretch;
+  }
+}
+.order-page__text {
+  @media screen and (min-width: $tablet) {
+    margin-left: 32px;
+  }
+}
+
+.order-page__title {
+  margin-bottom: 16px;
+  font-size: 23px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 48px;
+  }
+}
+
+.order-page__dscr {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: $TextColor;
+  margin-top: 16px;
+  //   max-width: 280px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 0;
+    max-width: 336px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    max-width: 672px;
+    margin-bottom: 24px;
+  }
+}
+.order-page__dscr:last-child {
+  margin-bottom: 0;
+}
+
+.imgs__list {
+  display: flex;
+  gap: 32px;
+  margin-top: 60px;
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+.imgs__item {
+  display: block;
+  height: 203px;
+  width: 203px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item-car {
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-1.jpg);
+  border-top-right-radius: 72px;
+  border-bottom-right-radius: 72px;
+}
+.item-colum {
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-2.jpg);
+  border-top-left-radius: 72px;
+  border-bottom-right-radius: 72px;
+}
+.item-mushroom {
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-3.jpg);
+  border-bottom-right-radius: 72px;
+}
+
+.decoration {
+  position: absolute;
+  background-color: $spotBackgroundColor;
+  box-shadow: $spotShadow;
+}
+.decoration--right {
+  @media screen and (min-width: $tablet) {
+    height: 64px;
+    width: 71px;
+    border-radius: 0px 0px 0px 35px;
+    right: 32px;
+    top: 7px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 82px;
+    width: 137px;
+    border-radius: 0px 0px 0px 72px;
+    right: 32px;
+    top: 7px;
+  }
+}
+.decoration--left {
+  height: 82px;
+  width: 82px;
+  border-radius: 0px 0px 72px 0px;
+  left: 35px;
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
+}

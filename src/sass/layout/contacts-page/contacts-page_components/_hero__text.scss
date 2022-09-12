@@ -1,0 +1,25 @@
+.cotact-hero__text-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 32px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    position: relative;
+  }
+}
+
+.cotact-hero__text--flex {
+  display: flex;
+  align-items: center;
+  img {
+    width: 22px;
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      width: 49px;
+      bottom: 1px;
+      left: 0;
+    }
+  }
+}
