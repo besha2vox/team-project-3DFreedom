@@ -14,6 +14,9 @@
     align-items: flex-start;
     flex-direction: row-reverse;
   }
+  @media screen and (min-width: $desktop) {
+    align-items: center;
+  }
 }
 
 // Лого
@@ -154,6 +157,7 @@
   visibility: visible;
   pointer-events: initial;
   z-index: 99;
+  top: 73px;
   @media screen and (min-width: $desktop) {
     display: none;
   }
@@ -611,5 +615,18 @@
     top: 0;
     left: 62%;
     transform: translate(100%, 0);
+  }
+}
+
+.page-header__rectangle--mobile {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 73.65px;
+    height: 73.65px;
+    left: -29px;
+    top: 294.61px;
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    border-radius: 0px 0px 35px 0px;
   }
 }
