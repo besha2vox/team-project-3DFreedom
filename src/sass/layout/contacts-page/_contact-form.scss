@@ -1,0 +1,9 @@
+.contacts-page__container {
+  display: flex;
+  flex-direction: column-reverse;
+  @media screen and (min-width: $desktop) {
+    padding-left: 149px;
+    padding-right: 149px;
+    flex-direction: row;
+  }
+}
