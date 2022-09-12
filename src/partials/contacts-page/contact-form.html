@@ -1,0 +1,33 @@
+<section class="order__form">
+    <h2 class="sub-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+    <form class="form">
+        <label for="name" class="form__label">
+            <input required type="text" name="name" id="name" placeholder="Ім’я" class="form__input" />
+        </label>
+        <label for="mail" class="form__label">
+            <input required type="email" name="mail" id="mail" placeholder="Email" class="form__input" />
+        </label>
+        <div class="thumb">
+            <div class="thumb__textarea">
+                <label for="comment" class="form__label">Повідомлення
+                    <textarea required placeholder="Залишіть своє повідомлення" class="form__textarea" name="comment"
+                        id="comment"></textarea>
+                </label>
+                <label for="file" class="form__label--file">
+                    <input required class="input__file" type="file" name="file" id="file" />
+                    <svg class="icon-input-file" width="21" height="20">
+                        <use href="/src/images/svg/sprite.svg#icon-input-file"></use>
+                    </svg>
+                </label>
+            </div>
+            <p class="form__text--file">
+                *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+            </p>
+        </div>
+        <div>
+            <button class="order-button form__order-button" type="submit">ВІДПРАВИТИ</button>
+        </div>
+    </form>
+    <div class="order__spot1"></div>
+    <div class="order__spot2"></div>
+</section>
