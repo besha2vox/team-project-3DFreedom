@@ -1,14 +1,23 @@
-.methods__container {
+.methods {
   @media screen and (max-width: 767px) {
-    position: relative;
+    padding-bottom: 40px;
   }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 41px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 100px;
+  }
+}
+
+.methods__container {
+  position: relative;
   @media screen and (min-width: 1440px) {
     padding-left: 149px;
     padding-right: 149px;
   }
 }
 .methods__div {
-  padding-bottom: 56px;
   display: flex;
   flex-direction: column;
   @media screen and (min-width: 768px) {
