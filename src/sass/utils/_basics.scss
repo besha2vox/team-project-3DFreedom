@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   line-height: 1.25;
   color: $TextColor;
-  background-color: $primeryBackgroundColor;
+  background-color: $primaryBackgroundColor;
 
   @media screen and (min-width: $desktop) {
     font-weight: 300;
