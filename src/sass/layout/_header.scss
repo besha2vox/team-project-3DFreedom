@@ -621,6 +621,7 @@
 .page-header__rectangle--mobile {
   @media screen and (max-width: 767px) {
     position: absolute;
+    z-index: 99;
     width: 73.65px;
     height: 73.65px;
     left: -29px;
