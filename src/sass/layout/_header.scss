@@ -654,3 +654,86 @@
 .menu-lang__dropdowncontent {
   z-index: 100;
 }
+
+.decoration {
+@media screen and (max-width: 767px) {
+  display: none;
+}
+
+@media screen and (min-width: $tablet) and (max-width: 1439px) {
+  display: block;
+}
+}
+
+.hero__bottom-part1 {
+  display: block;
+  position: absolute;
+  background-color: $spotBackgroundColor;
+  box-shadow: $spotShadow;
+  top: 1013.55px; 
+  left: 32px;
+  width: 73.65px;
+  height: 63.76px;
+  border-radius: 0 0 0 35px;
+}
+
+.hero__bottom-part2 {
+  display: block;
+    position: absolute;
+    background-color: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    width: 73.65px;
+    height: 74.05px;
+    border-radius: 0 25px;
+    top: 983px; 
+    left: 736px;
+}
+
+.hero__bottom-part3 {
+  display: block;
+    position: absolute;
+    background-color: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+    width: 73.65px;
+    height: 74.05px;
+    border-radius: 25 0px;
+    top: 646px;
+    left: 32px;
+}
+
+.hero__bottom-part4 {
+  display: block;
+  position: absolute;
+  background-color: $spotBackgroundColor;
+  box-shadow: $spotShadow;
+  top: 584px;
+  left: 711px;
+  width: 73.65px;
+  height: 74.05px;
+  border-radius: 72px;
+}
+
+.hero__bottom-part5 {
+  display: block;
+  position: absolute;
+  background-color: $spotBackgroundColor;
+  box-shadow: $spotShadow;
+  border-radius: 0 0 35px;
+  transform: rotate(180);
+  width: 73px;
+  height: 74px;
+  top: 583.63px; 
+  left: 735.9px;
+}
+
+.hero__bottom-part6 {
+  display: block;
+  position: absolute;
+  background-color: $spotBackgroundColor;
+  box-shadow: $spotShadow;
+  width: 73.65px;
+  height: 74.05px;
+  border-radius: 0 35px 0 0;
+  top: 940px;
+  left: 106px;
+}
