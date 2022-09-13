@@ -62,7 +62,7 @@
 .mobile-menu {
   margin-right: auto;
   margin-left: auto;
-  position: relative;
+
 }
 
 .mobile-menu__toggle {
@@ -659,125 +659,194 @@
   z-index: 100;
 }
 
-.decoration {
-@media screen and (max-width: 767px) {
+// .decoration {
+// @media screen and (max-width: 767px) {
+//   display: none;
+// }
+
+// @media screen and (min-width: $tablet) and (max-width: 1439px) {
+//   display: block;
+// }
+// }
+
+// .hero__bottom-part1 {
+//   display: block;
+//   position: absolute;
+//   background-color: $spotBackgroundColor;
+//   box-shadow: $spotShadow;
+//   top: 590px; 
+//   left: 45px;
+//   width: 73.65px;
+//   height: 63.76px;
+//   border-radius: 0 0 0 35px;
+// }
+
+// .hero__bottom-part2 {
+//   display: block;
+//   position: absolute;
+//   background-color: $spotBackgroundColor;
+//   box-shadow: $spotShadow;
+//   width: 73.65px;
+//   height: 74.05px;
+//   border-radius: 0 25px;
+//   top: 565px;
+//   left: 665px;
+// }
+
+// .hero__bottom-part3 {
+//   display: block;
+//   position: absolute;
+//   background-color: $spotBackgroundColor;
+//   box-shadow: $spotShadow;
+//   width: 73.65px;
+//   height: 74.05px;
+//   border-radius: 25 0px;
+//   top: 230px;
+//   left: 45px;
+// }
+
+// .hero__bottom-part4 {
+//   display: block;
+//   position: absolute;
+//   background-color: $spotBackgroundColor;
+//   box-shadow: $spotShadow;
+//   top: 70px;
+//   left: 720px;
+//   width: 73.65px;
+//   height: 74.05px;
+//   border-radius: 72px;
+// }
+
+// .hero__bottom-part5 {
+//   display: block;
+//   position: absolute;
+//   background-color: $spotBackgroundColor;
+//   box-shadow: $spotShadow;
+//   border-radius: 0 0 35px;
+//   transform: rotate(180deg);
+//   width: 73px;
+//   height: 74px;
+//   top: 0px; 
+//   left: 675px;
+// }
+
+// .hero__bottom-part6 {
+//   display: block;
+//   position: absolute;
+//   background-color: $spotBackgroundColor;
+//   box-shadow: $spotShadow;
+//   width: 73.65px;
+//   height: 74.05px;
+//   border-radius: 0 35px 0 0;
+//   top: 518px;
+//   left: 115px;
+// }
+
+// .hero__bottom-part7 {
+//   display: block;
+//   position: absolute;
+//   background-color: $spotBackgroundColor;
+//   box-shadow: $spotShadow;
+//   top: -60px;
+//   left: 45px;
+//   width: 73.65px;
+//   height: 74.05px;
+//   border-radius: 0 0 25px 0;
+  
+// }
+
+// .decoration .hero__left-blocks {
+//   position: absolute;
+//   top: -390px;
+//   left: 45px;
+  
+// }
+
+// .decoration .hero__right-blocks {
+//   position: absolute;
+//   top: -390px;
+//   left: 600px;
+// }
+
+.mobile-menu__container.is-open~.hero__bottom-part1,
+.mobile-menu__container.is-open~.hero__bottom-part2,
+.mobile-menu__container.is-open~.hero__bottom-part3,
+.mobile-menu__container.is-open~.hero__bottom-part4,
+.mobile-menu__container.is-open~.hero__bottom-part5,
+.mobile-menu__container.is-open~.hero__bottom-part6,
+.mobile-menu__container.is-open~.hero__bottom-part7 {
+  @media screen and (min-width: $mobile) and (max-width: 1439px) {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    width: 73.65px;
+    height: 73.65px;
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+}
+}
+
+.mobile-menu__container.is-open~.hero__right-blocks,
+.mobile-menu__container.is-open~.hero__left-blocks {
+@media screen and (min-width: $mobile) and (max-width: 1439px) {
+  z-index: 999;
+  display: block;
+}
+}
+
+.mobile-menu__container~.hero__left-blocks,
+.mobile-menu__container~.hero__right-blocks {
   display: none;
 }
 
-@media screen and (min-width: $tablet) and (max-width: 1439px) {
-  display: block;
-}
-}
+.mobile-menu__container.is-open~.hero__bottom-part1 {
+    top: 1013.55px; 
+    left: 32px;
+  }
 
-.hero__bottom-part1 {
-  display: block;
-  position: absolute;
-  background-color: $spotBackgroundColor;
-  box-shadow: $spotShadow;
-  top: 590px; 
-  left: 45px;
-  width: 73.65px;
-  height: 63.76px;
-  border-radius: 0 0 0 35px;
-}
+.mobile-menu__container.is-open~.hero__bottom-part2 {
+    border-radius: 0 25px;
+    top: 983px;
+    left: 735.65px;
+  }
 
-.hero__bottom-part2 {
-  display: block;
-  position: absolute;
-  background-color: $spotBackgroundColor;
-  box-shadow: $spotShadow;
-  width: 73.65px;
-  height: 74.05px;
-  border-radius: 0 25px;
-  top: 565px;
-  left: 665px;
-}
+.mobile-menu__container.is-open~.hero__bottom-part3 {
+    border-radius: 25 0px;
+    top: 646.36px;
+    left: 45px;
+  } 
 
-.hero__bottom-part3 {
-  display: block;
-  position: absolute;
-  background-color: $spotBackgroundColor;
-  box-shadow: $spotShadow;
-  width: 73.65px;
-  height: 74.05px;
-  border-radius: 25 0px;
-  top: 230px;
-  left: 45px;
-}
+.mobile-menu__container.is-open~.hero__bottom-part4 {
+    top: 583.6px;
+    left: 711.35px;
+    border-radius: 72px;
+  }
 
-.hero__bottom-part4 {
-  display: block;
-  position: absolute;
-  background-color: $spotBackgroundColor;
-  box-shadow: $spotShadow;
-  top: 70px;
-  left: 720px;
-  width: 73.65px;
-  height: 74.05px;
-  border-radius: 72px;
-}
-
-.hero__bottom-part5 {
-  display: block;
-  position: absolute;
-  background-color: $spotBackgroundColor;
-  box-shadow: $spotShadow;
+.mobile-menu__container.is-open~.hero__bottom-part5 {
   border-radius: 0 0 35px;
   transform: rotate(180deg);
-  width: 73px;
-  height: 74px;
-  top: 0px; 
-  left: 675px;
+  top: 583.63px; 
+  left: 735.9px;
 }
 
-.hero__bottom-part6 {
-  display: block;
-  position: absolute;
-  background-color: $spotBackgroundColor;
-  box-shadow: $spotShadow;
-  width: 73.65px;
-  height: 74.05px;
+.mobile-menu__container.is-open~.hero__bottom-part6 {
   border-radius: 0 35px 0 0;
-  top: 518px;
-  left: 115px;
+  top: 940px;
+  left: 105.65px;
 }
 
-.hero__bottom-part7 {
-  display: block;
-  position: absolute;
-  background-color: $spotBackgroundColor;
-  box-shadow: $spotShadow;
-  top: -60px;
+.mobile-menu__container.is-open~.hero__bottom-part7 {
+  top: 432.45px;
   left: 45px;
-  width: 73.65px;
-  height: 74.05px;
   border-radius: 0 0 25px 0;
-  
 }
 
-.decoration .hero__left-blocks {
-  position: absolute;
-  top: -390px;
-  left: 45px;
-  
+.mobile-menu__container.is-open~.hero__left-blocks {
+  top: 100px;
+  left: 32px;
 }
 
-.decoration .hero__right-blocks {
-  position: absolute;
-  top: -390px;
-  left: 600px;
+.mobile-menu__container.is-open~.hero__right-blocks {
+  top: 100px;
+  left: 588.59px;
 }
-
-// .mobile-menu__container.is-open>.page-header__rectangle--mobile {
-//   @media screen and (max-width: 767px) {
-//     position: absolute;
-//     z-index: 99;
-//     width: 73.65px;
-//     height: 73.65px;
-//     left: -29px;
-//     top: 294.61px;
-//     background: $spotBackgroundColor;
-//     box-shadow: $spotShadow;
-//     border-radius: 0px 0px 35px 0px;
-//   }
-// }
