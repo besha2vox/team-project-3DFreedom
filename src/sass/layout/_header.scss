@@ -21,11 +21,17 @@
 
 // Лого
 
+.logo-thumb {
+  @media screen and (min-width: $desktop) {
+    padding: 40px 0;
+  }
+}
+
 .logo {
   position: relative;
   z-index: 99;
   @media screen and (max-width: 767px) {
-      width: 101px;
+    width: 101px;
   }
   @media screen and (min-width: 768px) {
     width: 125px;
@@ -36,6 +42,7 @@
 }
 
 .logo__link {
+  display: block;
   @media screen and (max-width: 767px) {
     padding-top: 23px;
     margin-right: 23px;
@@ -268,12 +275,10 @@
 }
 
 .desktop-menu__item:not(:first-child) {
-@media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     margin-left: 56px;
   }
 }
-
-
 
 .desktop-menu__item--link {
   font-family: $fontCaviarDreams;
@@ -283,10 +288,10 @@
   letter-spacing: 0.01em;
   color: $TextColor;
   @media screen and (min-width: $desktop) {
-  padding-top: 54px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
-
 
 .desktop-menu__service-item-link {
   margin-top: 4px;
@@ -705,11 +710,11 @@
 }
 
 .mobile-menu__container ~ .hero__right-blocks {
-  top: 100px;
+  top: 104px;
   left: 588.59px;
 }
 .mobile-menu__container ~ .hero__left-blocks {
-  top: 100px;
+  top: 104px;
   left: 32px;
 }
 
@@ -791,7 +796,6 @@
 }
 
 .mobile-menu__container.is-open ~ .hero__left-blocks {
-  top: 100px;
   left: 32px;
   opacity: 1;
   visibility: visible;
@@ -805,7 +809,6 @@
 }
 
 .mobile-menu__container.is-open ~ .hero__right-blocks {
-  top: 100px;
   left: 588.59px;
   opacity: 1;
   visibility: visible;
