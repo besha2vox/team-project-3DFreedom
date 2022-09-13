@@ -21,39 +21,41 @@
 
 // Лого
 
+.logo-thumb {
+  @media screen and (min-width: $desktop) {
+    padding: 40px 0;
+  }
+}
+
 .logo {
   position: relative;
   z-index: 99;
   @media screen and (max-width: 767px) {
     width: 101px;
   }
-
-  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) {
     width: 125px;
   }
-
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1440px) {
     width: 192px;
   }
 }
 
 .logo__link {
+  display: block;
   @media screen and (max-width: 767px) {
     padding-top: 23px;
     margin-right: 23px;
-    width: 101px;
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1439px) {
     padding-top: 32px;
     margin-right: 111px;
-    width: 125px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 40px;
+    // padding-top: 40px;
     margin-right: 258px;
-    width: 192px;
   }
 }
 
@@ -269,12 +271,13 @@
 
   @media screen and (min-width: $desktop) {
     display: flex;
-    padding-top: 54px;
   }
 }
 
-.desktop-menu__item:not(:last-child) {
-  margin-right: 56px;
+.desktop-menu__item:not(:first-child) {
+  @media screen and (min-width: $desktop) {
+    margin-left: 56px;
+  }
 }
 
 .desktop-menu__item--link {
@@ -284,9 +287,13 @@
   text-align: center;
   letter-spacing: 0.01em;
   color: $TextColor;
+  @media screen and (min-width: $desktop) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
-.desktop-menu__service-item {
+.desktop-menu__service-item-link {
   margin-top: 4px;
 }
 
@@ -310,7 +317,8 @@
 
 .desktop-menu--click:focus ~ .desktop-menu__service-list,
 .desktop-menu--click:active ~ .desktop-menu__service-list,
-.desktop-menu__service-list:hover {
+.desktop-menu__service-list:hover,
+.desktop-menu__service-list:focus {
   display: block;
   position: absolute;
   top: 20px;
@@ -379,12 +387,12 @@
     padding-top: 23px;
     margin-left: 25px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
     margin-left: 38px;
     padding-top: 20px;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 40px;
+    // padding-top: 40px;
     margin-left: 118px;
   }
 }
@@ -527,7 +535,7 @@
     padding-top: 28px;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 40px;
+    // padding-top: 40px;
   }
 }
 
@@ -656,7 +664,7 @@
 
 .page-header__rectangle--logo,
 .page-header__rectangle--lang {
-  z-index: 10;
+  z-index: 1;
 }
 
 .menu-lang__dropdowncontent {
@@ -676,8 +684,13 @@
     z-index: 99;
     width: 73.65px;
     height: 73.65px;
-    background: $spotBackgroundColor;
-    box-shadow: $spotShadow;
+    background: transparent;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: background 250ms $cubicBezier, box-shadow 250ms $cubicBezier;
+    .mobile-menu__container.is-open ~ & {
+      background: $spotBackgroundColor;
+      box-shadow: $spotShadow;
+    }
   }
 }
 
@@ -692,8 +705,17 @@
 .mobile-menu__container ~ .hero__left-blocks {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 500ms $cubicBezier, visibility 500ms $cubicBezier;
+  transition: opacity 250ms $cubicBezier, visibility 250ms $cubicBezier;
   pointer-events: none;
+}
+
+.mobile-menu__container ~ .hero__right-blocks {
+  top: 104px;
+  left: 588.59px;
+}
+.mobile-menu__container ~ .hero__left-blocks {
+  top: 104px;
+  left: 32px;
 }
 
 .mobile-menu__container.is-open ~ .hero__bottom-part1 {
@@ -774,7 +796,6 @@
 }
 
 .mobile-menu__container.is-open ~ .hero__left-blocks {
-  top: 100px;
   left: 32px;
   opacity: 1;
   visibility: visible;
@@ -788,7 +809,6 @@
 }
 
 .mobile-menu__container.is-open ~ .hero__right-blocks {
-  top: 100px;
   left: 588.59px;
   opacity: 1;
   visibility: visible;
