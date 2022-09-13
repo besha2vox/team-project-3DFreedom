@@ -20,11 +20,17 @@
   @media screen and (min-width: $tablet) {
     min-width: 704px;
   }
+  @media screen and (min-width: $desktop) {
+    padding-top: 20px;
+  }
 }
 
 .container__title {
-  align-self: start;
-  padding-bottom: 16px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
   @media screen and (min-width: $desktop) {
     margin-left: 130px;
     margin-bottom: 40px;
