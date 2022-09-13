@@ -29,6 +29,7 @@
     max-width: $desktop;
     padding-right: 269px;
     padding-left: 149px;
+    padding-top: 50px;
   }
 }
 
@@ -52,7 +53,6 @@
 }
 
 .scan__title {
-  padding-top: 40px;
   margin-bottom: 16px;
   margin-left: 0;
   @media screen and (min-width: $desktop) {
