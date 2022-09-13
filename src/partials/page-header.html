@@ -3,47 +3,32 @@
         <div class="page-header__rectangle--logo"></div>
         <div class="page-header__rectangle--lang"></div>
         <a class="logo__link link" href="./index.html">
-            <picture class="logo">
-                <source
-                    srcset="./images/bitmap/logo/browser-png/logo_101x25.png 1x, ./images/bitmap/logo/browser-png/logo_101x25@2x.png 2x"
-                    media="(max-width: 767px)" type="image/png">
-                <source
-                    srcset="./images/bitmap/logo/browser-png/logo_125x31.png 1x, ./images/bitmap/logo/browser-png/logo_125x31@2x.png 2x"
-                    media="(min-width: 768px) and (max-width: 1439px)" type="image/png">
-                <source
-                    srcset="./images/bitmap/logo/browser-png/logo_192x48.png 1x, ./images/bitmap/logo/browser-png/logo_192x48.@2x.png 2x"
-                    media="(min-width: 1440px)" type="image/png">
-                <img src="./images/bitmap/logo/browser-png/logo_192x48.png" alt="Логотип компанії">
-            </picture>
+            <img class="logo" src="/src/images/svg/icons-svg/logo.svg" alt="Комп'ютер"/>
         </a>
-        <div class="desktop-menu">
-            <nav class="desktop-menu__nav">
-                <ul class="desktop-menu__list list">
-                    <li class="desktop-menu__item">
-                        <a class="desktop-menu__item--link link" href="./index.html">Головна</a>
-                    </li>
-                    <li class="desktop-menu__item desktop-menu--dropdown">
-                        <a class="desktop-menu--click desktop-menu__item--link link" href="javascript:void(0);"
-                            tabindex="1">Послуги</a>
-                        <ul class="desktop-menu__service-list list">
-                            <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link"
-                                    href="./modeling-page.html">3D Моделювання</a></li>
-                            <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link"
-                                    href="./scanning-page.html">3D
-                                    Сканування</a></li>
-                            <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link"
-                                    href="./printing-page.html">3D Друк</a></li>
-                        </ul>
-                    </li>
-                    <li class="desktop-menu__item"><a class="desktop-menu__item--link link"
-                            href="./order-page.html">Замовити</a>
-                    </li>
-                    <li class="desktop-menu__item"><a class="desktop-menu__item--link link"
-                            href="./contacts-page.html">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="desktop-menu__nav">
+            <ul class="desktop-menu__list list">
+                <li class="desktop-menu__item">
+                    <a class="desktop-menu__item--link link" href="./index.html">Головна</a>
+                </li>
+                <li class="desktop-menu__item desktop-menu--dropdown">
+                    <a class="desktop-menu--click desktop-menu__item--link link" href="javascript:void(0);"
+                        tabindex="1">Послуги</a>
+                    <ul class="desktop-menu__service-list list">
+                        <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link"
+                                href="./modeling-page.html">3D Моделювання</a></li>
+                        <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link"
+                                href="./scanning-page.html">3D
+                                Сканування</a></li>
+                        <li class="desktop-menu__service-item"><a class="desktop-menu__service-item-link link"
+                                href="./printing-page.html">3D Друк</a></li>
+                    </ul>
+                </li>
+                <li class="desktop-menu__item"><a class="desktop-menu__item--link link" href="./order-page.html">Замовити</a>
+                </li>
+                <li class="desktop-menu__item"><a class="desktop-menu__item--link link" href="./contacts-page.html">Контакти</a>
+                </li>
+            </ul>
+        </nav>
         <div class="mobile-menu">
             <button type="button" class="mobile-menu__toggle toggle-menu js-open-menu" aria-controls="mobile-menu"
                 aria-expanded="false">

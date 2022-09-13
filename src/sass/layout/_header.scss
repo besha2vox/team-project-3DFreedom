@@ -25,14 +25,12 @@
   position: relative;
   z-index: 99;
   @media screen and (max-width: 767px) {
-    width: 101px;
+      width: 101px;
   }
-
-  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) {
     width: 125px;
   }
-
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1440px) {
     width: 192px;
   }
 }
@@ -41,19 +39,16 @@
   @media screen and (max-width: 767px) {
     padding-top: 23px;
     margin-right: 23px;
-    width: 101px;
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1439px) {
     padding-top: 32px;
     margin-right: 111px;
-    width: 125px;
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 40px;
     margin-right: 258px;
-    width: 192px;
   }
 }
 
@@ -269,13 +264,16 @@
 
   @media screen and (min-width: $desktop) {
     display: flex;
-    padding-top: 54px;
   }
 }
 
-.desktop-menu__item:not(:last-child) {
-  margin-right: 56px;
+.desktop-menu__item:not(:first-child) {
+@media screen and (min-width: $desktop) {
+    margin-left: 56px;
+  }
 }
+
+
 
 .desktop-menu__item--link {
   font-family: $fontCaviarDreams;
@@ -284,9 +282,13 @@
   text-align: center;
   letter-spacing: 0.01em;
   color: $TextColor;
+  @media screen and (min-width: $desktop) {
+  padding-top: 54px;
+  }
 }
 
-.desktop-menu__service-item {
+
+.desktop-menu__service-item-link {
   margin-top: 4px;
 }
 
@@ -310,7 +312,8 @@
 
 .desktop-menu--click:focus ~ .desktop-menu__service-list,
 .desktop-menu--click:active ~ .desktop-menu__service-list,
-.desktop-menu__service-list:hover {
+.desktop-menu__service-list:hover,
+.desktop-menu__service-list:focus {
   display: block;
   position: absolute;
   top: 20px;
