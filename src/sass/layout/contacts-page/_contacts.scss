@@ -27,16 +27,14 @@
     padding-bottom: 0;
   }
 }
-.contacts__thumb:first-child {
-  @media screen and (min-width: $tablet) and (max-width: 1439px) {
-    margin-right: 25px;
-  }
-}
 
 .contacts__thumb {
   @media screen and (min-width: $tablet) and (max-width: 1439px) {
     &--right {
       margin-left: auto;
+    }
+    &--mr {
+      margin-right: 25px;
     }
   }
 }
