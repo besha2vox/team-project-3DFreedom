@@ -133,20 +133,20 @@
 .mobile-menu__container {
   position: absolute;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0);
+  width: 100vw;
+  background-color: transparent;
   opacity: 0;
-  transition: opacity 250ms $cubicBezier, background-color 250ms $cubicBezier;
   visibility: hidden;
+  transition: opacity 500ms $cubicBezier, background-color 500ms $cubicBezier,
+    visibility 500ms $cubicBezier;
   pointer-events: none;
 
   @media screen and (max-width: 767px) {
-    width: 100vw;
     transform: translateX(-48%);
   }
   @media screen and (min-width: $tablet) {
-    width: 400px;
-    top: 100%;
-    left: 50%;
+    // top: 100%;
+    // left: 50%;
     transform: translateX(-50%);
   }
 }
@@ -157,6 +157,7 @@
   visibility: visible;
   pointer-events: initial;
   z-index: 8;
+  overflow: hidden;
   top: 73px;
   @media screen and (min-width: $desktop) {
     display: none;
@@ -177,6 +178,10 @@
   }
 }
 
+.mobile-menu__container ~ .page-header__rectangle--mobile {
+  display: none;
+}
+
 .mobile-menu__item {
   width: 100%;
   margin-bottom: 24px;
@@ -191,7 +196,10 @@
 }
 
 .mobile-menu__list {
-  @media screen and (max-width: 1439px) {
+  @media screen and (min-width: $tablet) {
+    padding: 40px 0 0 30px;
+  }
+  @media screen and (max-width: 767px) {
     width: 100%;
     padding: 38px 20px 102px 10px;
   }
@@ -653,4 +661,142 @@
 
 .menu-lang__dropdowncontent {
   z-index: 100;
+}
+
+.mobile-menu__container.is-open ~ .hero__bottom-part1,
+.mobile-menu__container.is-open ~ .hero__bottom-part2,
+.mobile-menu__container.is-open ~ .hero__bottom-part3,
+.mobile-menu__container.is-open ~ .hero__bottom-part4,
+.mobile-menu__container.is-open ~ .hero__bottom-part5,
+.mobile-menu__container.is-open ~ .hero__bottom-part6,
+.mobile-menu__container.is-open ~ .hero__bottom-part7 {
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    width: 73.65px;
+    height: 73.65px;
+    background: $spotBackgroundColor;
+    box-shadow: $spotShadow;
+  }
+}
+
+.mobile-menu__container ~ .hero__bottom-part2,
+.mobile-menu__container ~ .hero__bottom-part1,
+.mobile-menu__container ~ .hero__bottom-part3,
+.mobile-menu__container ~ .hero__bottom-part4,
+.mobile-menu__container ~ .hero__bottom-part5,
+.mobile-menu__container ~ .hero__bottom-part6,
+.mobile-menu__container ~ .hero__bottom-part7,
+.mobile-menu__container ~ .hero__right-blocks,
+.mobile-menu__container ~ .hero__left-blocks {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms $cubicBezier, visibility 500ms $cubicBezier;
+  pointer-events: none;
+}
+
+.mobile-menu__container.is-open ~ .hero__bottom-part1 {
+  top: 1013.55px;
+  left: 32px;
+  opacity: 1;
+  visibility: visible;
+  @media screen and (max-width: 767px) and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.mobile-menu__container.is-open ~ .hero__bottom-part2 {
+  border-radius: 0 25px;
+  top: 983px;
+  left: 735.65px;
+  opacity: 1;
+  visibility: visible;
+  @media screen and (max-width: 767px) and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.mobile-menu__container.is-open ~ .hero__bottom-part3 {
+  border-radius: 25 0px;
+  top: 646.36px;
+  left: 45px;
+  opacity: 1;
+  visibility: visible;
+  @media screen and (max-width: 767px) and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.mobile-menu__container.is-open ~ .hero__bottom-part4 {
+  top: 583.6px;
+  left: 711.35px;
+  border-radius: 72px;
+  opacity: 1;
+  visibility: visible;
+  @media screen and (max-width: 767px) and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.mobile-menu__container.is-open ~ .hero__bottom-part5 {
+  border-radius: 0 0 35px;
+  transform: rotate(180deg);
+  top: 583.63px;
+  left: 735.9px;
+  opacity: 1;
+  visibility: visible;
+  @media screen and (max-width: 767px) and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.mobile-menu__container.is-open ~ .hero__bottom-part6 {
+  border-radius: 0 35px 0 0;
+  top: 940px;
+  left: 105.65px;
+  opacity: 1;
+  visibility: visible;
+  @media screen and (max-width: 767px) and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.mobile-menu__container.is-open ~ .hero__bottom-part7 {
+  top: 432.45px;
+  left: 45px;
+  border-radius: 0 0 25px 0;
+  opacity: 1;
+  visibility: visible;
+  @media screen and (max-width: 767px) and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.mobile-menu__container.is-open ~ .hero__left-blocks {
+  top: 100px;
+  left: 32px;
+  opacity: 1;
+  visibility: visible;
+  @media screen and (max-width: 767px) and (min-width: $desktop) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+    z-index: 999;
+    display: block;
+  }
+}
+
+.mobile-menu__container.is-open ~ .hero__right-blocks {
+  top: 100px;
+  left: 588.59px;
+  opacity: 1;
+  visibility: visible;
+  @media screen and (max-width: 767px) and (min-width: $desktop) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+    z-index: 999;
+    display: block;
+  }
 }
