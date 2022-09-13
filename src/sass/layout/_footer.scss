@@ -31,27 +31,15 @@
         margin-bottom: 20px;
     }
 
-         @media screen and (min-width: $desktop) {
-            margin-right: 277px;
-         }
-}
-
-.footer__logo-img {
-    display: inline-block;
-    width: 192px;
-    height: 48px;
-
     @media screen and (min-width: $desktop) {
-        width: 192px;
-        height: 48px;
-        
+        margin-right: 277px;
     }
 }
 
 .footer__info {
     @media screen and (min-width: $tablet) {
         display: flex;
-        
+
     }
 
     @media screen and (min-width: $desktop) {
@@ -63,7 +51,7 @@
 .footer__menu {
     @media screen and (max-width: 767px) {
         margin-top: 19px;
-       
+
     }
 
     @media screen and (min-width: $tablet) {
@@ -96,7 +84,7 @@
 .footer__socials {
     @media screen and (max-width: 767px) {
         margin-top: 24px;
-        
+
     }
 
     @media screen and (min-width: $tablet) and (max-width: 1439px) {
@@ -147,11 +135,8 @@
 }
 
 .footer__contacts-mail {
+    margin-bottom: 8px;
     font-style: normal;
-}
-
-.footer__contacts-mail-list {
-    margin-top: 8px;
 }
 
 .footer__contacts-mail-link {
@@ -159,15 +144,30 @@
     color: $accentColor;
 }
 
+
 .footer__contacts-tel {
     font-style: normal;
-}
-
-.footer__contacts-tel-item {
-    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .footer__contacts-tel-link {
     font-style: normal;
     color: $accentColor;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1439px){
+        display: block;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+}
+
+.footer__contacts-tel-link:not(:last-child) {
+    margin-bottom: 8px;
 }
