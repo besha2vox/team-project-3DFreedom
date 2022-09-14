@@ -324,7 +324,7 @@
   position: absolute;
   top: 40%;
   left: 100%;
-  transform: translate(0%, 0%);
+  transform: rotate(180deg);
 }
 
 .desktop-menu--click:focus ~ .desktop-menu__service-list::after {
@@ -811,4 +811,23 @@
     z-index: 999;
     display: block;
   }
+}
+
+.desktop-menu__service-list::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 4px;
+  margin-left: 2px;
+  fill: $iconColor;
+  mask-image: #fff;
+  background-image: url('/src/images/svg/icons-svg/services-arrow.svg');
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -15%;
+  left: 70%;
+  transform: translate(0%, 0%);
 }
