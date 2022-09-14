@@ -1,4 +1,4 @@
-.model {
+.model.model__section {
   @media screen and (max-width: 767px) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -8,7 +8,7 @@
     padding-bottom: 41px;
   }
   @media screen and (min-width: 1440px) {
-    padding-top: 100px;
+    padding-top: 48px;
     padding-bottom: 40px;
   }
 }
@@ -46,10 +46,7 @@
     transform: rotate(90deg);
   }
 }
-.model__hero {
-  @media screen and (min-width: 1440px) {
-  }
-}
+
 .model__rectangle-mob {
   @media screen and (max-width: 767px) {
     position: absolute;
