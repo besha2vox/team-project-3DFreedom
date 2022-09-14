@@ -35,6 +35,7 @@
 /*style the items (options), including the selected item:*/
 .select-items div,
 .select-selected {
+  font-weight: 400;
   color: $TextColor;
   padding: 4px 2px;
   cursor: pointer;
@@ -44,6 +45,7 @@
 }
 
 .select-selected {
+  font-weight: 400;
   border-bottom: 1px solid #487996;
 }
 /*style items (options):*/
