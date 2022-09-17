@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  max-width: 100%;
 }
 
 .dropdown {
@@ -159,7 +160,7 @@
   visibility: visible;
   pointer-events: initial;
   z-index: 8;
-  overflow: hidden;
+  // overflow-y: hidden;
   top: 73px;
   box-shadow: 0 -10px 10px #ffffff;
   @media screen and (min-width: $desktop) {
@@ -167,14 +168,15 @@
   }
 }
 
+
 .mobile-menu__item {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 24px;
   text-align: center;
 }
 
 .mobile-menu__item--link {
-  width: 100%;
+  max-width: 100%;
   font-family: $fontCeraPro;
   @include titleFonts(24px);
   transition: color 250ms $cubicBezier;
@@ -191,14 +193,14 @@
 }
 
 .mobile-menu__service-list {
-  width: 100%;
+  max-width: 100%;
   @media screen and (max-width: 1439px) {
     margin-top: 24px;
   }
 }
 
 .mobile-menu__service-item-link {
-  width: 100%;
+  max-width: 100%;
   font-family: $fontCeraPro;
   font-weight: 500;
   font-size: 24px;
@@ -209,7 +211,7 @@
 }
 
 .mobile-menu__service-item {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 24px;
   text-align: center;
 }
@@ -433,7 +435,7 @@
 
 .mobile-contacts__link,
 .mobile-contacts__link--not-dropdown {
-  width: 100%;
+  max-width: 100%;
   color: $TextColor;
   text-decoration: none;
   display: block;
@@ -614,6 +616,7 @@
     height: 73.65px;
     top: 0;
     right: 0;
+    transform: translate(36%, 0);
   }
   @media screen and (min-width: $tablet) and (max-width: 1439px) {
     border-radius: 35px 0px 0px 35px;
